@@ -4,7 +4,6 @@
 
 @text-color: #aaa;
 @link-color: #5291d8;
-@link-hover-color: #52aed8;
 @border-color: #444;
 @header-height: 5em;
 @tile-size: 20em;
@@ -69,6 +68,11 @@ body {
 
 		a {
 			text-decoration: none;
+			color: @text-color;
+		}
+
+		a:hover {
+			color: @text-color + 50;
 		}
 	}
 
@@ -76,7 +80,6 @@ body {
 }
 
 #resources_content_container {
-	.blue_link;
 	#content_container;
 }
 
@@ -96,6 +99,7 @@ body {
 #content_container {
 	padding: 1em;
 	.top-border;
+	.blue_link;
 }
 
 .blue_link {
@@ -104,7 +108,7 @@ body {
 	}
 
 	a:hover {
-		color: @link-hover-color;
+		color: @link-color + 30;
 	}
 }
 
