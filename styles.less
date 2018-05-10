@@ -27,22 +27,25 @@ body {
 
 #header {
 	height: @header-height;
-//	line-height: @header-height;
+	line-height: @header-height;
+
 	&:first-child {
 		font-size: 2em;
 		font-weight: @bold;
 		text-align: center;
+		a {
+			text-decoration: none;
+		}
 	}
+}
 
-	a {
-//		position: absolute;
-//		top: @header-height;
-//		right: 2em;
-		display: block;
-		margin-right: 0.4em;
-		font-size: 0.5em;
-		text-decoration: none;
-	}
+#resume_link {
+	position: absolute;
+	top: @header-height;
+	right: 2em;
+	margin-right: 0.4em;
+	font-size: 0.5em;
+	text-decoration: none;
 }
 
 #homepage_content_container {
