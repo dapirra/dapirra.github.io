@@ -14,7 +14,7 @@ body {
   background-color: #33333355;
   border-radius: 1.5em;
 }
-#header {
+header {
   position: relative;
   height: 10rem;
   font-size: 2.5rem;
@@ -78,7 +78,7 @@ body {
 #play_button {
   width: 150px;
 }
-#footer {
+footer {
   font-size: 0.7em;
   margin-top: 1em;
   padding-top: 0.4em;
