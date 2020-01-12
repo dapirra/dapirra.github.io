@@ -21,18 +21,18 @@
 			<p><a href="https://codepen.io/dapirra/full/ppgmpx/" target="_blank">View on CodePen</a></p>
 			<h4>Features:</h4>
 			<ul>
-				<li>Support for First Fit, Best Fit, and Worst Fit memory algorithms</li>
-				<li>The contents of the memory are displayed in a doughnut created with Chart.js</li>
-				<li>Viewing memory contents as a list is also possible</li>
-				<li>Capable of performing Compaction</li>
-				<li>Support for creating a process with a burst time in milliseconds</li>
-				<li>When there is no room for processes in memory, they can be added to the waiting queue</li>
-				<li>The user can view, rearrange, and delete processes on the waiting queue</li>
-				<li>Processes on the waiting queue are automatically added whenever a process is killed</li>
-				<li>The waiting queue uses a FIFO algorithm</li>
-				<li>Processes can be randomly created as well as randomly killed</li>
-				<li>It's also possible to kill all processes in memory</li>
-				<li>The processes in the doughnut can be recolored using a rainbow pattern</li>
+				<li>Support for First Fit, Best Fit, and Worst Fit memory algorithms.</li>
+				<li>The contents of the memory are displayed in a doughnut created with Chart.js.</li>
+				<li>Viewing memory contents as a list is also possible.</li>
+				<li>Capable of performing Compaction.</li>
+				<li>Support for creating a process with a burst time in milliseconds.</li>
+				<li>When there is no room for processes in memory, they can be added to the waiting queue.</li>
+				<li>The user can view, rearrange, and delete processes on the waiting queue.</li>
+				<li>Processes on the waiting queue are automatically added whenever a process is killed.</li>
+				<li>The waiting queue uses a FIFO algorithm.</li>
+				<li>Processes can be randomly created as well as randomly killed.</li>
+				<li>It's also possible to kill all processes in memory.</li>
+				<li>The processes in the doughnut can be recolored using a rainbow pattern.</li>
 			</ul>
 			<h4>How data is structured:</h4>
 				<p>I used 3 separate arrays called memoryLabels, memoryValues, and memoryColors to hold the data for the Memory Simulator. This was done so that the chart may be given reference pointers to these 3 arrays and to keep things less complicated by only having one copy of the data. The processes as well as the free memory blocks are stored on these 3 arrays.</p>
