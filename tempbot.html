@@ -6,6 +6,10 @@
 	<title>Projects: TempBot</title>
 	<link rel="stylesheet" href="css/w3.css">
 	<link rel="stylesheet" href="styles.css" type="text/css" />
+	<style>
+		img {padding: 5px}
+		#images > a {text-decoration: none}
+	</style>
 </head>
 <body>
 	<div id="page_container" class="w3-animate-opacity">
@@ -15,15 +19,17 @@
 		</header>
 		<div id="content_container">
 			<h2>TempBot:</h2>
-			<a href="images/screenshots/tempbot_temp.png">
-				<img src="images/screenshots/tempbot_temp.png" height="225" />
-			</a>
-			<a href="images/screenshots/tempbot_finished.png">
-				<img src="images/screenshots/tempbot_finished.png" height="225" />
-			</a>
-			<a href="images/screenshots/tempbot_help.png">
-				<img src="images/screenshots/tempbot_help.png" height="225" />
-			</a>
+			<div id="images">
+				<a href="images/screenshots/tempbot_temp.png">
+					<img src="images/screenshots/tempbot_temp.png" height="225" />
+				</a>
+				<a href="images/screenshots/tempbot_finished.png">
+					<img src="images/screenshots/tempbot_finished.png" height="225" />
+				</a>
+				<a href="images/screenshots/tempbot_help.png">
+					<img src="images/screenshots/tempbot_help.png" height="225" />
+				</a>
+			</div>
 			<p><a href="https://github.com/dapirra/TempBot" target="_blank">View on Github</a></p>
 			<h4>About:</h4>
 			<p>TempBot is a Discord bot that can display hardware information of the machine that it's running on. I created TempBot for a friend who needed to see the temperature that the CPUs on his server were running at from his phone.</p>
