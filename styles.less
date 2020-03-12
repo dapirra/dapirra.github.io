@@ -73,12 +73,16 @@ header {
 			color: @text-color;
 		}
 
-		a:hover {
+		a > div:hover {
 			color: @text-color + 50;
+		}
+
+		a > div:hover > img {
+			background-color: @border-color + 10;
 		}
 	}
 
-	#content_container;
+	#base_content_container;
 }
 
 #resources_content_container {
@@ -109,9 +113,13 @@ footer {
 	border-top: solid @border-color 1px;
 }
 
-#content_container {
+#base_content_container {
 	padding: 1em;
 	.top-border;
+}
+
+#content_container {
+	#base_content_container;
 	.blue_link;
 }
 
@@ -127,12 +135,7 @@ footer {
 
 .img_tile {
 	background-color: @border-color;
-
 	.img;
-
-	&:hover {
-		background-color: @border-color + 10;
-	}
 }
 
 // W3C

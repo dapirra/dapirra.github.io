@@ -61,14 +61,11 @@ header {
   text-decoration: none;
   color: #aaa;
 }
-#homepage_content_container .col_group a:hover {
+#homepage_content_container .col_group a > div:hover {
   color: #dcdcdc;
 }
-#homepage_content_container a {
-  color: #5291d8;
-}
-#homepage_content_container a:hover {
-  color: #70aff6;
+#homepage_content_container .col_group a > div:hover > img {
+  background-color: #4e4e4e;
 }
 #resources_content_container {
   padding: 1em;
@@ -98,6 +95,10 @@ footer {
 .top-border {
   border-top: solid #444 1px;
 }
+#base_content_container {
+  padding: 1em;
+  border-top: solid #444 1px;
+}
 #content_container {
   padding: 1em;
   border-top: solid #444 1px;
@@ -118,9 +119,6 @@ footer {
   background-color: #444;
   max-width: 100%;
   height: auto;
-}
-.img_tile:hover {
-  background-color: #4e4e4e;
 }
 .card {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
