@@ -95,10 +95,6 @@ footer {
 .top-border {
   border-top: solid #444 1px;
 }
-#base_content_container {
-  padding: 1em;
-  border-top: solid #444 1px;
-}
 #content_container {
   padding: 1em;
   border-top: solid #444 1px;
