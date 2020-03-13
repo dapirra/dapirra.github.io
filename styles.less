@@ -82,7 +82,7 @@ header {
 		}
 	}
 
-	#base_content_container;
+	#base_content_container();
 }
 
 #resources_content_container {
@@ -104,7 +104,7 @@ footer {
 	font-size: 0.7em;
 	margin-top: 1em;
 	padding-top: 0.4em;
-	.top-border;
+	.top-border();
 }
 
 // Mixins
@@ -115,12 +115,12 @@ footer {
 
 #base_content_container() {
 	padding: 1em;
-	.top-border;
+	.top-border();
 }
 
 #content_container {
-	#base_content_container;
-	.blue_link;
+	#base_content_container();
+	.blue_link();
 }
 
 .blue_link {
@@ -135,7 +135,7 @@ footer {
 
 .img_tile {
 	background-color: @border-color;
-	.img;
+	.img();
 }
 
 // W3C
