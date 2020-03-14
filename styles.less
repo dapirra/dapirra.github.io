@@ -57,29 +57,27 @@ header {
 
 #homepage_content_container {
 
-	.col_group {
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 330px);
+	justify-content: center;
 
-		.cols {
-			display: block;
-			max-width: @tile-size;
-			margin: 1em;
-		}
+	.cols {
+		display: block;
+		max-width: @tile-size;
+		margin: 1em;
+	}
 
-		a {
-			text-decoration: none;
-			color: @text-color;
-		}
+	a {
+		text-decoration: none;
+		color: @text-color;
+	}
 
-		a > div:hover {
-			color: @text-color + 50;
-		}
+	a > div:hover {
+		color: @text-color + 50;
+	}
 
-		a > div:hover > img {
-			background-color: @border-color + 10;
-		}
+	a > div:hover > img {
+		background-color: @border-color + 10;
 	}
 
 	#base_content_container();

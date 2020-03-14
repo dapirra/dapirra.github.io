@@ -44,27 +44,25 @@ header {
   text-decoration: none;
 }
 #homepage_content_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 330px);
+  justify-content: center;
   padding: 1em;
   border-top: solid #444 1px;
 }
-#homepage_content_container .col_group {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-#homepage_content_container .col_group .cols {
+#homepage_content_container .cols {
   display: block;
   max-width: 20em;
   margin: 1em;
 }
-#homepage_content_container .col_group a {
+#homepage_content_container a {
   text-decoration: none;
   color: #aaa;
 }
-#homepage_content_container .col_group a > div:hover {
+#homepage_content_container a > div:hover {
   color: #dcdcdc;
 }
-#homepage_content_container .col_group a > div:hover > img {
+#homepage_content_container a > div:hover > img {
   background-color: #4e4e4e;
 }
 #play_button {
