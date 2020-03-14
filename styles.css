@@ -67,16 +67,6 @@ header {
 #homepage_content_container .col_group a > div:hover > img {
   background-color: #4e4e4e;
 }
-#resources_content_container {
-  padding: 1em;
-  border-top: solid #444 1px;
-}
-#resources_content_container a {
-  color: #5291d8;
-}
-#resources_content_container a:hover {
-  color: #70aff6;
-}
 #play_button {
   width: 150px;
 }
