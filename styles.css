@@ -60,6 +60,10 @@ header {
     text-align: center;
   }
 }
+#homepage_content_container .section_title h2 {
+  text-decoration: underline;
+  text-decoration-color: #444;
+}
 #homepage_content_container .cols {
   display: block;
   max-width: 20em;
