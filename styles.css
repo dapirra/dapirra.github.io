@@ -46,9 +46,19 @@ header {
 #homepage_content_container {
   display: grid;
   grid-template-columns: repeat(auto-fill, 330px);
+  grid-template-rows: repeat(4, auto);
   justify-content: center;
   padding: 1em;
   border-top: solid #444 1px;
+}
+#homepage_content_container .section_title {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+@media screen and (max-width: 754px) {
+  #homepage_content_container .section_title {
+    text-align: center;
+  }
 }
 #homepage_content_container .cols {
   display: block;
