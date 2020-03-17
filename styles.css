@@ -51,7 +51,7 @@ header {
   padding: 1em;
   border-top: solid #444 1px;
 }
-@media screen and (max-width: 1414px) and (min-width: 1085px) {
+@media screen and (max-width: 1414px) and (min-width: 1073px) {
   #homepage_content_container {
     grid-template-columns: repeat(2, 330px);
   }
