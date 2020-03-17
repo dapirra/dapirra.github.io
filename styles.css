@@ -51,6 +51,11 @@ header {
   padding: 1em;
   border-top: solid #444 1px;
 }
+@media screen and (max-width: 1414px) and (min-width: 1085px) {
+  #homepage_content_container {
+    grid-template-columns: repeat(2, 330px);
+  }
+}
 #homepage_content_container .section_title {
   grid-column-start: 1;
   grid-column-end: -1;
