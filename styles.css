@@ -99,6 +99,15 @@ footer {
   padding-top: 0.4em;
   border-top: 1px solid #444;
 }
+footer .footer_right {
+  float: right;
+}
+footer .footer_right a {
+  color: #5291d8;
+}
+footer .footer_right a:hover {
+  color: #70aff6;
+}
 #content_container {
   padding: 1em;
 }
