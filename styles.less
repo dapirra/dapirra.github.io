@@ -132,6 +132,20 @@ footer {
 #content_container {
 	#base_content_container();
 	.blue_link();
+
+	article {
+		@media screen and (min-width: 1281px) {
+			margin: 0 25%;
+		}
+		background-color: @primary-color;
+		border-radius: 0.5em;
+		padding: 1em;
+
+		h2 {
+			font-weight: 600;
+			margin-top: 0;
+		}
+	}
 }
 
 .blue_link {
