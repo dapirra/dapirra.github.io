@@ -108,6 +108,7 @@ footer .footer_right {
 }
 footer .footer_right a {
   color: #5291d8;
+  overflow-wrap: break-word;
 }
 footer .footer_right a:hover {
   color: #70aff6;
@@ -117,6 +118,7 @@ footer .footer_right a:hover {
 }
 #content_container a {
   color: #5291d8;
+  overflow-wrap: break-word;
 }
 #content_container a:hover {
   color: #70aff6;
@@ -137,6 +139,7 @@ footer .footer_right a:hover {
 }
 .blue_link a {
   color: #5291d8;
+  overflow-wrap: break-word;
 }
 .blue_link a:hover {
   color: #70aff6;
