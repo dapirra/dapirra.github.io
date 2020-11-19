@@ -59,7 +59,6 @@ header {
 }
 
 #homepage_content_container {
-
 	display: grid;
 	grid-template-columns: repeat(auto-fill, @card-width);
 	grid-template-rows: repeat(4, auto);
@@ -69,7 +68,7 @@ header {
 		grid-template-columns: repeat(2, @card-width);
 	}
 
-	.section_title {
+	& > .section_title {
 		grid-column-start: 1;
 		grid-column-end: -1;
 
@@ -77,7 +76,7 @@ header {
 			text-align: center;
 		}
 
-		h2 {
+		& > h2 {
 			text-decoration: underline;
 			text-decoration-color: @secondary-color;
 		}
@@ -92,14 +91,14 @@ header {
 	a {
 		text-decoration: none;
 		color: @text-color;
-	}
 
-	a > div:hover {
-		color: @text-color + 50;
-	}
+		& > div:hover {
+			color: @text-color + 50;
 
-	a > div:hover > img {
-		background-color: @secondary-color + 10;
+			& > img {
+				background-color: @secondary-color + 10;
+			}
+		}
 	}
 
 	#base_content_container();
@@ -115,10 +114,10 @@ pre {
 	border: @border-style;
 	border-radius: 0.5em;
 	overflow-x: scroll;
-}
 
-pre::-webkit-scrollbar {
-	display: none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 footer {
@@ -127,7 +126,7 @@ footer {
 	padding-top: 0.4em;
 	border-top: @border-style;
 
-	.footer_right {
+	& > .footer_right {
 		float: right;
 		.blue_link();
 	}
@@ -143,15 +142,16 @@ footer {
 	#base_content_container();
 	.blue_link();
 
-	article {
+	& > article {
 		@media screen and (min-width: 1281px) {
 			margin: 0 25%;
 		}
+
 		background-color: @primary-color;
 		border-radius: 0.5em;
 		padding: 1em;
 
-		h2 {
+		& > h2 {
 			font-weight: 600;
 			margin-top: 0;
 		}
@@ -162,10 +162,10 @@ footer {
 	a {
 		color: @link-color;
 		overflow-wrap: break-word;
-	}
 
-	a:hover {
-		color: @link-color + 30;
+		&:hover {
+			color: @link-color + 30;
+		}
 	}
 }
 
