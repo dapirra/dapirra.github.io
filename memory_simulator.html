@@ -6,8 +6,13 @@
 	<title>Projects: Memory Algorithm Simulator</title>
 	<link rel="stylesheet" href="css/lib/w3.css">
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<script src="js/gallery.js"></script>
 </head>
 <body>
+	<div id="image_container" style="visibility: hidden;">
+		<img id="full_image" />
+		<div id="image_close">X</div>
+	</div>
 	<div id="page_container" class="w3-animate-opacity">
 		<header>
 			<a href="." id="header_text">David Pirraglia</a>
@@ -16,9 +21,11 @@
 		<div id="content_container">
 			<article>
 				<h2>Memory Algorithm Simulator</h2>
-				<a href="images/screenshots/memory.png">
-					<img alt="Memory Algorithm Simulator Screenshot" class="img" src="images/screenshots/memory_small.png" />
-				</a>
+				<div id="image_gallery">
+					<a href="images/screenshots/memory.png">
+						<img alt="Memory Algorithm Simulator Screenshot" class="img" src="images/screenshots/memory_small.png" />
+					</a>
+				</div>
 				<p>
 					<a href="https://codepen.io/dapirra/full/ppgmpx" target="_blank">Try it on CodePen</a>
 					<a href="https://codepen.io/dapirra/pen/ppgmpx" target="_blank" style="margin-left: 1.5em">View Source</a>
