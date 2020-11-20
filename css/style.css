@@ -118,10 +118,10 @@ header {
   max-width: 100%;
   height: auto;
 }
-#images > a {
+#image_gallery > a {
   text-decoration: none;
 }
-#images img {
+#image_gallery img {
   padding: 5px;
 }
 footer {

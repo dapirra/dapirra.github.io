@@ -17,13 +17,13 @@ window.onload = function () {
 		e.stopPropagation();
 	};
 
-	document.getElementById('images').childNodes.forEach(function (image) {
-		image.onclick = function (e) {
+	document.getElementById('image_gallery').childNodes.forEach(function (image_link) {
+		image_link.onclick = function (e) {
 			e.preventDefault();
 			if (!isImageShown) {
 				e.stopPropagation();
 				page_container.style.filter = 'brightness(0.5)';
-				full_image.src = image.firstElementChild.src;
+				full_image.src = image_link.href;
 				image_container.style.visibility = 'visible';
 				isImageShown = true;
 			}
