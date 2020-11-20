@@ -105,8 +105,13 @@ header {
   }
 }
 #content_container > article > h2 {
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 0;
+}
+@media screen and (min-width: 1281px) {
+  #content_container > article > h2 {
+    font-weight: 600;
+  }
 }
 .img_tile {
   background-color: #444;

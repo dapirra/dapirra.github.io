@@ -6,6 +6,8 @@
 @secondary-color: #444;
 @text-color: #aaa;
 @link-color: #5291d8;
+@scrollbar-background: #111;
+@scrollbar-foreground: #333;
 @header-height: 10rem;
 @tile-size: 20em;
 @bold: 700;
@@ -13,6 +15,7 @@
 @border-style: 1px solid @secondary-color;
 @main-font: 'Open Sans', Arial, Helvetica, sans-serif;
 @background-image: url(images/misc/bg.png);
+@article-media-min-width: 1281px;
 
 body {
 	font-family: @main-font;
@@ -109,7 +112,7 @@ header {
 	.blue_link();
 
 	& > article {
-		@media screen and (min-width: 1281px) {
+		@media screen and (min-width: @article-media-min-width) {
 			margin: 0 25%;
 		}
 
@@ -118,7 +121,11 @@ header {
 		padding: 1em;
 
 		& > h2 {
-			font-weight: 600;
+			@media screen and (min-width: @article-media-min-width) {
+				font-weight: 600;
+			}
+
+			font-weight: 500;
 			margin-top: 0;
 		}
 	}
@@ -197,15 +204,15 @@ pre {
 
 ::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
-	background-color: #111;
+	background-color: @scrollbar-background;
 }
 
 ::-webkit-scrollbar {
 	width: 12px;
-	background-color: #111;
+	background-color: @scrollbar-background;
 }
 
 ::-webkit-scrollbar-thumb {
 	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-	background-color: #333;
+	background-color: @scrollbar-foreground;
 }
