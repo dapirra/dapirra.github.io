@@ -45,10 +45,8 @@ header {
 #header_text {
 	position: absolute;
 	display: block;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	text-decoration: none;
+	.absolute_center();
 }
 
 #resume_link {
@@ -162,11 +160,9 @@ footer {
 #full_image {
 	position: fixed;
 	z-index: 10;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	max-width: 100%;
 	max-height: 100%;
+	.absolute_center();
 }
 
 #image_close {
@@ -202,6 +198,12 @@ pre {
 
 #base_content_container() {
 	padding: 1em;
+}
+
+.absolute_center() {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .blue_link {
