@@ -99,7 +99,7 @@ header {
   border-radius: 0.5em;
   padding: 1em;
 }
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1280px) {
   #content_container > article {
     margin: 0 25%;
   }
@@ -108,7 +108,7 @@ header {
   font-weight: 500;
   margin-top: 0;
 }
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1280px) {
   #content_container > article > h2 {
     font-weight: 600;
   }
