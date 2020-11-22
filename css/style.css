@@ -134,11 +134,19 @@ footer > .footer_right a {
 footer > .footer_right a:hover {
   color: #70aff6;
 }
+#image_gallery {
+  overflow-y: auto;
+  display: flex;
+}
 #image_gallery > a {
   text-decoration: none;
+  height: 100%;
 }
 #image_gallery img {
   padding: 5px;
+}
+#image_gallery::-webkit-scrollbar {
+  display: none;
 }
 .gallery_button {
   background-color: #111;

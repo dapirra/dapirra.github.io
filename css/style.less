@@ -151,10 +151,16 @@ footer {
 #image_gallery {
 	& > a {
 		text-decoration: none;
+		height: 100%;
 	}
 	img {
 		padding: 5px;
 	}
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	overflow-y: auto;
+	display: flex;
 }
 
 .gallery_button {
@@ -251,11 +257,6 @@ pre {
 
 .container {
 	padding: 0.01em 16px;
-}
-
-.img {
-	max-width: 100%;
-	height: auto;
 }
 
 // Custom Scrollbar
