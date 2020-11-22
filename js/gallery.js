@@ -3,6 +3,8 @@ window.onload = function () {
 	const page_container = document.getElementById('page_container');
 	const image_container = document.getElementById('image_container');
 	const full_image = document.getElementById('full_image');
+	const image_prev = document.getElementById('image_prev');
+	const image_next = document.getElementById('image_next');
 	let isImageShown = false;
 	HTMLCollectionToArray = x => [].slice.call(x);
 	all_image_links = [];
@@ -54,6 +56,16 @@ window.onload = function () {
 		}
 	};
 
+	image_prev.onclick = function (e) {
+		e.stopPropagation();
+		gallery_prev();
+	};
+
+	image_next.onclick = function (e) {
+		e.stopPropagation();
+		gallery_next();
+	};
+
 	HTMLCollectionToArray(document.getElementById('image_gallery').children).forEach(function (image_link, index) {
 		image_link.setAttribute('index', index);
 		all_image_links.push(image_link.href);
@@ -70,4 +82,9 @@ window.onload = function () {
 			}
 		};
 	});
+
+	if (all_image_links.length <= 1) { // Hides prev/next buttons when only 1 image
+		image_prev.style.display = 'none';
+		image_next.style.display = 'none';
+	}
 };

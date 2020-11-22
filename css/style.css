@@ -124,6 +124,17 @@ header {
 #image_gallery img {
   padding: 5px;
 }
+.gallery_button {
+  background-color: #111;
+  border: solid #333 2px;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-size: 2em;
+  padding: 0 0.5em;
+  position: fixed;
+  user-select: none;
+  z-index: 1;
+}
 footer {
   font-size: 0.7em;
   margin-top: 1em;
@@ -142,7 +153,7 @@ footer > .footer_right a:hover {
 }
 #full_image {
   position: fixed;
-  z-index: 10;
+  z-index: 1;
   max-width: 100%;
   max-height: 100%;
   top: 50%;
@@ -152,14 +163,18 @@ footer > .footer_right a:hover {
 #image_close {
   position: fixed;
   right: 0.5em;
-  z-index: 10;
   font-size: 2em;
-  user-select: none;
-  cursor: pointer;
-  background-color: #111;
   padding: 0 0.5em;
-  border-radius: 0.5em;
-  border: solid #333 2px;
+}
+#image_prev {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.5em;
+}
+#image_next {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.5em;
 }
 #play_button {
   width: 150px;
