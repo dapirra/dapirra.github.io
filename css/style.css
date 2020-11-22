@@ -151,6 +151,9 @@ footer > .footer_right a:hover {
   user-select: none;
   z-index: 1;
 }
+.gallery_button:active {
+  filter: brightness(1.5);
+}
 #full_image {
   position: fixed;
   z-index: 1;
