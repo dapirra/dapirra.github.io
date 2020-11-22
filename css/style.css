@@ -118,6 +118,22 @@ header {
   max-width: 100%;
   height: auto;
 }
+footer {
+  font-size: 0.7em;
+  margin-top: 1em;
+  padding-top: 0.4em;
+  border-top: 1px solid #444;
+}
+footer > .footer_right {
+  float: right;
+}
+footer > .footer_right a {
+  color: #5291d8;
+  overflow-wrap: break-word;
+}
+footer > .footer_right a:hover {
+  color: #70aff6;
+}
 #image_gallery > a {
   text-decoration: none;
 }
@@ -134,22 +150,6 @@ header {
   position: fixed;
   user-select: none;
   z-index: 1;
-}
-footer {
-  font-size: 0.7em;
-  margin-top: 1em;
-  padding-top: 0.4em;
-  border-top: 1px solid #444;
-}
-footer > .footer_right {
-  float: right;
-}
-footer > .footer_right a {
-  color: #5291d8;
-  overflow-wrap: break-word;
-}
-footer > .footer_right a:hover {
-  color: #70aff6;
 }
 #full_image {
   position: fixed;
