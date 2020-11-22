@@ -1,5 +1,4 @@
 window.onload = function () {
-	// Variables
 	const page_container = document.getElementById('page_container');
 	const image_container = document.getElementById('image_container');
 	const full_image = document.getElementById('full_image');
@@ -17,12 +16,12 @@ window.onload = function () {
 	}
 
 	function gallery_prev() {
-		if (currentImage == 0) return;
+		if (currentImage === 0) return;
 		full_image.src = all_image_links[--currentImage];
 	}
 
 	function gallery_next() {
-		if (currentImage == all_image_links.length - 1) return;
+		if (currentImage === all_image_links.length - 1) return;
 		full_image.src = all_image_links[++currentImage];
 	}
 
