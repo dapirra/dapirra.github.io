@@ -36,8 +36,8 @@
 				</div>
 				<p><a href="https://github.com/dapirra/TempBot" target="_blank">View on Github</a></p>
 				<h4>About:</h4>
-				<p>TempBot is a Discord bot that can display hardware information of the machine that it's running on. I created TempBot for a friend who needed to see the temperature that the CPUs on his server were running at from his phone.</p>
-				<p>TempBot can display:</p>
+				<p>TempBot is a Discord bot that can display hardware information of the machine that it's running on. It connects to Discord via an API and it reads in hardware information either from <a href="https://openhardwaremonitor.org" target="_blank">Open Hardware Monitor</a> or the <a href="https://docs.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page" target="_blank">WMI</a>. When running and added to a Discord server, TempBot will function like a console application; a reference of the available commands can be seen below. I created TempBot for a friend who needed to see the temperature that the CPUs on his server were running at, from his phone.</p>
+				<h4>TempBot can display:</h4>
 				<ul>
 					<li>CPU Usage and Temperature.</li>
 					<li>GPU Temperature.</li>
@@ -45,8 +45,44 @@
 					<li>Disk Read and Write Rates.</li>
 				</ul>
 				<h4>Requirements:</h4>
-				<p>TempBot requires Open Hardware Monitor running in the background to receive most of it's information. TempBot does not need administrative privileges to function. TempBot functions only on Windows.</p>
-				<p>Open Hardware Monitor: <a href="https://openhardwaremonitor.org" target="_blank">https://openhardwaremonitor.org</a></p>
+				<ul>
+					<li>A <a href="https://www.writebots.com/discord-bot-token/" target="_blank">Discord Bot API Token</a> so that your bot can have it's own instance.</li>
+					<li><a href="https://openhardwaremonitor.org" target="_blank">Open Hardware Monitor</a> running in the background.</li>
+				</ul>
+				<p>TempBot requires Open Hardware Monitor running in the background to read in most of it's information from the <a href="https://docs.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page" target="_blank">WMI</a>. It does not matter where Open Hardware Monitor is installed/extracted to, so long as it's running. TempBot does <em>not</em> need administrative privileges to function (Open Hardware Monitor however, does). TempBot functions solely on Windows.</p>
+				<h4>Command Reference:</h4>
+				<ul>
+					<li><strong>!temp</strong>
+						<ul>
+							<li>TempBot will display hardware information for 5 minutes.</li>
+						</ul>
+					</li>
+					<li><strong>!temp go</strong>
+						<ul>
+							<li>TempBot will display hardware information indefinitely (until '!temp stop' is run).</li>
+						</ul>
+					</li>
+					<li><strong>!temp for x</strong>
+						<ul>
+							<li>TempBot will display hardware information for x amount of minutes.</li>
+						</ul>
+					</li>
+					<li><strong>!temp stop</strong>
+						<ul>
+							<li>TempBot will stop updating the message that displays hardware information.</li>
+						</ul>
+					</li>
+					<li><strong>!temp help</strong>
+						<ul>
+							<li>Displays this help message.</li>
+						</ul>
+					</li>
+					<li><strong>!temp exit</strong>
+						<ul>
+							<li>Shuts TempBot down.</li>
+						</ul>
+					</li>
+				</ul>
 			</article>
 		</div>
 		<footer>
