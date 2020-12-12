@@ -98,7 +98,7 @@ header {
 		& > div:hover {
 			color: @text-color + 50;
 
-			& > img {
+			& > div.tile_container {
 				background-color: @secondary-color + 10;
 			}
 		}
@@ -130,8 +130,20 @@ header {
 }
 
 .img_tile {
+	max-height: 100%;
+	max-width: 100%;
+	padding: 0.7em 0;
+}
+
+.short_img_tile {
+	padding: 15% 0;
+}
+
+.tile_container {
 	background-color: @secondary-color;
-	.img();
+	display: flex;
+	justify-content: center;
+	height: 175px;
 }
 
 footer {
