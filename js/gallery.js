@@ -19,11 +19,13 @@ window.onload = function () {
 	function gallery_prev() {
 		if (currentImage === 0) return;
 		full_image.src = all_image_links[--currentImage];
+		image_gallery.children[currentImage].scrollIntoView({block: 'nearest'});
 	}
 
 	function gallery_next() {
 		if (currentImage === all_image_links.length - 1) return;
 		full_image.src = all_image_links[++currentImage];
+		image_gallery.children[currentImage].scrollIntoView({block: 'nearest'});
 	}
 
 	document.body.onclick = function () { // Close the image when clicking away
