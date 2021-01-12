@@ -86,6 +86,12 @@ header {
 		& > h2 {
 			text-decoration: underline;
 			text-decoration-color: @secondary-color;
+
+			&::after {
+				content: ":";
+				text-decoration: none;
+				display: inline-block;
+			}
 		}
 	}
 
