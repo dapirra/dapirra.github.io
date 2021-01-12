@@ -77,7 +77,8 @@ header {
   color: #dcdcdc;
 }
 #homepage_content_container a > div:hover > div.tile_container {
-  background-color: #4e4e4e;
+  background: #4e4e4e;
+  background: radial-gradient(circle, #585858 0%, #444 100%);
 }
 #content_container {
   padding: 1em;
