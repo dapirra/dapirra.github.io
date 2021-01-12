@@ -95,15 +95,57 @@ header {
 		}
 	}
 
-	.cols {
-		display: block;
-		max-width: @tile-size;
-		margin: 1em;
-	}
-
-	a {
+	& > a {
 		text-decoration: none;
 		color: @text-color;
+
+		& > .cols {
+			display: block;
+			max-width: @tile-size;
+			margin: 1em;
+
+			& > .tile_container {
+				background-color: @secondary-color;
+				display: flex;
+				justify-content: center;
+				height: 175px;
+				position: relative;
+
+				& > .img_tile {
+					max-height: 100%;
+					max-width: 100%;
+					padding: 0.7em 0;
+				}
+
+				& > .short_img_tile {
+					padding: 15% 0;
+				}
+
+				& > .tags {
+					position: absolute;
+					bottom: 5px;
+					right: 5px;
+					visibility: hidden;
+					transform: translateY(50%);
+					transition-timing-function: ease-out;
+					transition: 0.05s;
+
+					& > .tag {
+						background-color: @primary-color;
+						border-radius: 8px;
+						font-size: 0.8rem;
+						padding: 0.2rem 0.3rem;
+						float: right;
+						clear: right;
+						width: fit-content;
+
+						&:not(:last-child) {
+							margin-bottom: 2px;
+						}
+					}
+				}
+			}
+		}
 
 		& > div:hover {
 			color: @text-color + 50;
@@ -115,9 +157,9 @@ header {
 
 			& > div.tile_container > .tags {
 				visibility: visible;
+				transform: translateY(0);
 				transition-timing-function: ease-in;
 				transition: 0.2s;
-				transform: translateY(0);
 			}
 		}
 	}
@@ -143,48 +185,6 @@ header {
 
 			font-weight: 500;
 			margin-top: 0;
-		}
-	}
-}
-
-.img_tile {
-	max-height: 100%;
-	max-width: 100%;
-	padding: 0.7em 0;
-}
-
-.short_img_tile {
-	padding: 15% 0;
-}
-
-.tile_container {
-	background-color: @secondary-color;
-	display: flex;
-	justify-content: center;
-	height: 175px;
-	position: relative;
-
-	& > .tags {
-		position: absolute;
-		bottom: 5px;
-		right: 5px;
-		visibility: hidden;
-		transform: translateY(50%);
-		transition-timing-function: ease-out;
-		transition: 0.05s;
-
-		& > .tag {
-			background-color: @primary-color;
-			border-radius: 8px;
-			font-size: 0.8rem;
-			padding: 0.2rem 0.3rem;
-			float: right;
-			clear: right;
-			width: fit-content;
-
-			&:not(:last-child) {
-				margin-bottom: 2px;
-			}
 		}
 	}
 }
