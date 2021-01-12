@@ -35,12 +35,19 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+#back_button {
+  position: absolute;
+  left: 0.4rem;
+  bottom: 0;
+  font-size: 2rem;
+  font-weight: normal;
+  text-decoration: none;
+}
 #resume_link {
   position: absolute;
   display: block;
-  right: 0;
+  right: 0.4rem;
   bottom: 0;
-  margin-right: 0.4em;
   font-size: 1rem;
   text-decoration: none;
 }
