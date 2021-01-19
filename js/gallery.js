@@ -1,4 +1,13 @@
 window.onload = function () {
+	document.body.insertAdjacentHTML('afterbegin',
+	'<div id="image_container" ' +
+		'style="visibility: hidden;">' +
+		'<img id="full_image" />' +
+		'<div id="image_prev" class="gallery_button">&lt;</div>' +
+		'<div id="image_next" class="gallery_button">&gt;</div>' +
+		'<div id="image_close" class="gallery_button">X</div>' +
+	'</div>');
+
 	const page_container = document.getElementById('page_container');
 	const image_container = document.getElementById('image_container');
 	const image_gallery = document.getElementById('image_gallery');
