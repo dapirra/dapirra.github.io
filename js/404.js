@@ -48,7 +48,8 @@ directory = {
 function guessPageDict(url, dir) {
 	for (item in dir) {
 		if (url.includes(item, 1)) {
-			return typeof dir[item] === 'string' ? dir[item] : guessPageDict(url, dir[item]);
+			return typeof dir[item] === 'string' ?
+				dir[item] : guessPageDict(url, dir[item]);
 		}
 	}
 }
