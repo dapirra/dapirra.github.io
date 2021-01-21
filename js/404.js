@@ -43,12 +43,12 @@ directory = {
 	'fix': filename_fixer,
 	'happy': mips_happy_birthday,
 	'birth': mips_happy_birthday
-}
+};
 
 function guessPageDict(url, dir) {
 	for (item in dir) {
 		if (url.includes(item, 1)) {
-			return typeof dir[item] === 'string' ? dir[item] : guessPageDict(url, dir[item])
+			return typeof dir[item] === 'string' ? dir[item] : guessPageDict(url, dir[item]);
 		}
 	}
 }
