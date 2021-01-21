@@ -85,17 +85,16 @@ snippets = [
 	mips_happy_birthday
 ];
 
+function populateLists(category_array, node) {
+	for (var project of category_array) {
+		node.insertAdjacentHTML('beforeend', '<li><a href="' + project + '">'
+								+ project + '</a></li>');
+	}
+}
+
 window.onload = function() {
-	const college = document.getElementById('college');
-	const personal = document.getElementById('personal');
-	const snippet = document.getElementById('snippet');
-	for (var project of college_projects) {
-		college.insertAdjacentHTML('beforeend', '<li><a href="' + project + '">' + project + '</a></li>')
-	}
-	for (var project of personal_projects) {
-		personal.insertAdjacentHTML('beforeend', '<li><a href="' + project + '">' + project + '</a></li>')
-	}
-	for (var project of snippets) {
-		snippet.insertAdjacentHTML('beforeend', '<li><a href="' + project + '">' + project + '</a></li>')
-	}
+	document.getElementById('home').textContent = location.hostname;
+	populateLists(college_projects, document.getElementById('college'));
+	populateLists(personal_projects, document.getElementById('personal'));
+	populateLists(snippets, document.getElementById('snippet'));
 };
