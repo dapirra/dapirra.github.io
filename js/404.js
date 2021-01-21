@@ -59,3 +59,43 @@ if (!location.pathname.startsWith('/404')) {
 		location.replace(page);
 	}
 }
+
+///////////////////////////// Must be the 404 page /////////////////////////////
+
+college_projects = [
+	flashcards_app,
+	packpackmonsters,
+	cpu_simulator,
+	memory_simulator,
+	minesweeper,
+	iphone_memory_game
+];
+
+personal_projects = [
+	tempbot,
+	apng_thing,
+	autoit_multiprocessing,
+	uniform_generator,
+	flashcards_mockup
+];
+
+snippets = [
+	procedurally_generated_forest,
+	filename_fixer,
+	mips_happy_birthday
+];
+
+window.onload = function() {
+	const college = document.getElementById('college');
+	const personal = document.getElementById('personal');
+	const snippet = document.getElementById('snippet');
+	for (var project of college_projects) {
+		college.insertAdjacentHTML('beforeend', '<li><a href="' + project + '">' + project + '</a></li>')
+	}
+	for (var project of personal_projects) {
+		personal.insertAdjacentHTML('beforeend', '<li><a href="' + project + '">' + project + '</a></li>')
+	}
+	for (var project of snippets) {
+		snippet.insertAdjacentHTML('beforeend', '<li><a href="' + project + '">' + project + '</a></li>')
+	}
+};
