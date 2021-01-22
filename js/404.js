@@ -1,22 +1,22 @@
 // College Projects
-const flashcards_app = 'flashcards_app.html';
-const packpackmonsters = 'packpackmonsters.html';
-const cpu_simulator = 'cpu_simulator.html';
-const memory_simulator = 'memory_simulator.html';
-const minesweeper = 'minesweeper.html';
-const iphone_memory_game = 'iphone_memory_game.html';
+const flashcards_app = '/flashcards_app';
+const packpackmonsters = '/packpackmonsters';
+const cpu_simulator = '/cpu_simulator';
+const memory_simulator = '/memory_simulator';
+const minesweeper = '/minesweeper';
+const iphone_memory_game = '/iphone_memory_game';
 
 // Personal Projects
-const tempbot = 'tempbot.html';
-const apng_thing = 'apng_thing.html';
-const autoit_multiprocessing = 'autoit_multiprocessing.html';
-const uniform_generator = 'uniform_generator.html';
-const flashcards_mockup = 'flashcards_mockup.html';
+const tempbot = '/tempbot';
+const apng_thing = '/apng_thing';
+const autoit_multiprocessing = '/autoit_multiprocessing';
+const uniform_generator = '/uniform_generator';
+const flashcards_mockup = '/flashcards_mockup';
 
 // Snippets
-const procedurally_generated_forest = 'procedurally_generated_forest.html';
-const filename_fixer = 'filename_fixer.html';
-const mips_happy_birthday = 'mips_happy_birthday.html';
+const procedurally_generated_forest = '/procedurally_generated_forest';
+const filename_fixer = '/filename_fixer';
+const mips_happy_birthday = '/mips_happy_birthday';
 
 directory = {
 	'flash': {
