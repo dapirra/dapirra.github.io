@@ -6,11 +6,30 @@
 	<title>David Pirraglia: Procedurally Generated Forest</title>
 	<link rel="stylesheet" href="/_css/lib/w3.min.css">
 	<link rel="stylesheet" href="/_css/style.css" type="text/css" />
-	<style>
-		#JSFEMB_18645 {
-			height: 470px;
-		}
-	</style>
+	<script>
+		window.onload = function () {
+			const fiddleWatcher = new MutationObserver(function(mutationsList, observer) {
+				for (let mutation of mutationsList) {
+					console.log('Height change detected');
+					mutation.target.lastElementChild.height = '470';
+
+					const iframeWatcher = new MutationObserver(function(mutationsList, observer) {
+						for (let mutation of mutationsList) {
+							if (mutation.target.height !== '470') {
+								mutation.target.height = '470';
+								console.log('Height change detected');
+							}
+						}
+					});
+					iframeWatcher.observe(mutation.target.lastElementChild,
+						{attributes: true, childList: false, subtree: false});
+					fiddleWatcher.disconnect();
+				}
+			});
+			fiddleWatcher.observe(document.getElementById('fiddle'),
+				{attributes: false, childList: true, subtree: false});
+		};
+	</script>
 </head>
 <body>
 	<div id="page_container" class="w3-animate-opacity">
@@ -22,7 +41,7 @@
 		<div id="content_container">
 			<article>
 				<h2>Procedurally Generated Forest</h2>
-				<div class="fiddle">
+				<div id="fiddle">
 					<script async src="//jsfiddle.net/dapirra/49bs78yq/7/embed/result,js,html,css/dark/"></script>
 				</div>
 				<h4>Backstory:</h4>
