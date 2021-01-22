@@ -11,18 +11,7 @@
 			const fiddleWatcher = new MutationObserver(function(mutationsList, observer) {
 				for (let mutation of mutationsList) {
 					console.log('Height change detected');
-					mutation.target.lastElementChild.height = '470';
-
-					const iframeWatcher = new MutationObserver(function(mutationsList, observer) {
-						for (let mutation of mutationsList) {
-							if (mutation.target.height !== '470') {
-								mutation.target.height = '470';
-								console.log('Height change detected');
-							}
-						}
-					});
-					iframeWatcher.observe(mutation.target.lastElementChild,
-						{attributes: true, childList: false, subtree: false});
+					mutation.target.lastElementChild.style.height = '470px';
 					fiddleWatcher.disconnect();
 				}
 			});
