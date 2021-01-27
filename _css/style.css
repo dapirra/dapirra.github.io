@@ -37,7 +37,8 @@ header {
 }
 #back_button {
   position: absolute;
-  left: 0.4rem;
+  left: 0;
+  padding: 0 0.4rem;
   bottom: 0;
   font-size: 2rem;
   font-weight: normal;
