@@ -11,6 +11,7 @@ const tempbot = '/tempbot';
 const apng_thing = '/apng_thing';
 const autoit_multiprocessing = '/autoit_multiprocessing';
 const uniform_generator = '/uniform_generator';
+const edge_only_plugin = '/edge_only_plugin';
 const flashcards_mockup = '/flashcards_mockup';
 
 // Snippets
@@ -38,6 +39,9 @@ directory = {
 	'multi': autoit_multiprocessing,
 	'uniform': uniform_generator,
 	'mock': flashcards_mockup,
+	'edge': edge_only_plugin,
+	'plug': edge_only_plugin,
+	'paint': edge_only_plugin,
 	'forest': procedurally_generated_forest,
 	'file': filename_fixer,
 	'fix': filename_fixer,
@@ -77,6 +81,7 @@ personal_projects = [
 	apng_thing,
 	autoit_multiprocessing,
 	uniform_generator,
+	edge_only_plugin,
 	flashcards_mockup
 ];
 
