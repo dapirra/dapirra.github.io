@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="/_css/lib/w3.min.css">
 	<link rel="stylesheet" href="/_css/style.css" type="text/css" />
 	<script>
-		window.onload = function () {
+		window.addEventListener('load', function () {
 			const fiddleWatcher = new MutationObserver(function(mutationsList, observer) {
 				for (let mutation of mutationsList) {
 					console.log('Height change detected');
@@ -17,7 +17,7 @@
 			});
 			fiddleWatcher.observe(document.getElementById('fiddle'),
 				{attributes: false, childList: true, subtree: false});
-		};
+		}, false);
 	</script>
 </head>
 <body>

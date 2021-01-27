@@ -1,4 +1,4 @@
-window.onload = function () {
+window.addEventListener('load', function () {
 	document.body.insertAdjacentHTML('afterbegin',
 	'<div id="image_container" ' +
 		'style="visibility: hidden;">' +
@@ -109,4 +109,4 @@ window.onload = function () {
 		image_gallery.firstElementChild.firstElementChild.style.maxWidth = '100%';
 		image_gallery.onmousewheel = null;
 	}
-};
+}, false);

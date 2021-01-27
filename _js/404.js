@@ -98,9 +98,9 @@ function populateLists(category_array, node) {
 	}
 }
 
-window.onload = function() {
+window.addEventListener('load', function() {
 	document.getElementById('home').textContent = location.hostname;
 	populateLists(college_projects, document.getElementById('college'));
 	populateLists(personal_projects, document.getElementById('personal'));
 	populateLists(snippets, document.getElementById('snippet'));
-};
+}, false);
