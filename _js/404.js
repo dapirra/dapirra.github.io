@@ -10,6 +10,7 @@ const iphone_memory_game = '/iphone_memory_game';
 const tempbot = '/tempbot';
 const apng_thing = '/apng_thing';
 const autoit_multiprocessing = '/autoit_multiprocessing';
+const router_restarter = '/router_restarter';
 const uniform_generator = '/uniform_generator';
 const edge_only_plugin = '/edge_only_plugin';
 const flashcards_mockup = '/flashcards_mockup';
@@ -37,6 +38,8 @@ directory = {
 	'temp': tempbot,
 	'png': apng_thing,
 	'multi': autoit_multiprocessing,
+	'route': router_restarter,
+	'restart': router_restarter,
 	'uniform': uniform_generator,
 	'mock': flashcards_mockup,
 	'edge': edge_only_plugin,
@@ -80,6 +83,7 @@ personal_projects = [
 	tempbot,
 	apng_thing,
 	autoit_multiprocessing,
+	router_restarter,
 	uniform_generator,
 	edge_only_plugin,
 	flashcards_mockup
