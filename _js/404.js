@@ -10,6 +10,7 @@ const iphone_memory_game = '/iphone_memory_game';
 const tempbot = '/tempbot';
 const apng_thing = '/apng_thing';
 const autoit_multiprocessing = '/autoit_multiprocessing';
+const monitor_off = '/monitor_off';
 const router_restarter = '/router_restarter';
 const uniform_generator = '/uniform_generator';
 const edge_only_plugin = '/edge_only_plugin';
@@ -26,6 +27,7 @@ directory = {
 		'': flashcards_app
 	},
 	'pack': packpackmonsters,
+	'monst': packpackmonsters,
 	'cpu': cpu_simulator,
 	'mem': {
 		'sim': memory_simulator,
@@ -38,6 +40,8 @@ directory = {
 	'temp': tempbot,
 	'png': apng_thing,
 	'multi': autoit_multiprocessing,
+	'mon': monitor_off,
+	'off': monitor_off,
 	'route': router_restarter,
 	'restart': router_restarter,
 	'uniform': uniform_generator,
@@ -83,6 +87,7 @@ personal_projects = [
 	tempbot,
 	apng_thing,
 	autoit_multiprocessing,
+	monitor_off,
 	router_restarter,
 	uniform_generator,
 	edge_only_plugin,

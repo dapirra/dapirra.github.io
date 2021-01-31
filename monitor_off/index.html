@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>David Pirraglia: Monitor Off</title>
+	<link rel="stylesheet" href="/_css/lib/w3.min.css">
+	<link rel="stylesheet" href="/_css/style.css" type="text/css" />
+</head>
+<body>
+	<div id="page_container" class="w3-animate-opacity">
+		<header>
+			<a href="/" id="header_text">David Pirraglia</a>
+			<a href="/" id="back_button">&#10094;</a>
+			<a href="/David%20Pirraglia%20Resume.pdf" id="resume_link">Resume</a>
+		</header>
+		<div id="content_container">
+			<article>
+				<h2>Monitor Off</h2>
+				<img src="/_images/app_tiles/monitor_off.png" alt="Monitor Icon" style="max-width: 100%; max-height: 150px">
+				<p>
+					<a download href="https://github.com/dapirra/Monitor_Off/releases/download/v1.0/Monitor_Off.exe">Download EXE</a>
+					<a href="https://github.com/dapirra/Monitor_Off" target="_blank" style="margin-left: 1.5em;">View Source</a>
+				</p>
+				<h4>About:</h4>
+				<p>This is a simple program I created to turn off my monitor on windows. Previously, I used to use <a target="_blank" href="https://www.nirsoft.net/utils/nircmd.html">nircmd</a> to turn my monitor off, but I wanted to figure out how to do it myself and write my own simple program which can do that. This program is useful to me because it would help me save battery life on my laptop by allowing me to turn the screen off when it wasn't necessary to have it on.</p>
+				<p>The program I wrote will take in 1 argument, which will be the delay in milliseconds before the monitor is to be turned off. By default, it will wait 1 second to turn off the monitor.</p>
+				<h4>Binding this to a hotkey in Windows:</h4>
+				<p>In order to bind this program to a keyboard shortcut in windows, a shortcut needs to be created and placed in one of the start menu folders:</p>
+				<pre>%appdata%\Microsoft\Windows\Start Menu\Programs</pre>
+				<pre>%programdata%\Microsoft\Windows\Start Menu\Programs</pre>
+				<p>Then, in the properties of the shortcut, a keyboard shortcut can be assigned:</p>
+				<img src="shortcut_properties.png" alt="Shortcut Properties Screenshot" style="max-width: 100%">
+				<p>Alternatively, a shortcut can be placed on the taskbar instead. I think it looks quite fitting down there. Also, Win + 1 can be used if it's the first icon on the taskbar.</p>
+				<img src="taskbar.png" alt="Taskbar Screenshot" style="max-width: 100%">
+				<h4>Turning off the monitor on Linux:</h4>
+				<p>Here's a simple bash script that I used to turn off my monitor on Linux with:</p>
+				<pre>#!/bin/bash
+sleep 1s
+xset dpms force off</pre>
+				<p>Saving the above text to a file and giving the file permission to execute is all that needs to be done.</p>
+				<h4>Icon Credit:</h4>
+				<p>This icon is located inside of system32\imageres.dll and is created by Microsoft.</p>
+			</article>
+		</div>
+		<footer>
+			<span class="footer_left">Website created by David Pirraglia</span>
+			<span class="footer_right"><a href="https://github.com/dapirra/dapirra.github.io" target="_blank">View Source</a></span>
+		</footer>
+	</div>
+</body>
+</html>
