@@ -3,6 +3,7 @@ const flashcards_app = '/flashcards_app';
 const packpackmonsters = '/packpackmonsters';
 const cpu_simulator = '/cpu_simulator';
 const memory_simulator = '/memory_simulator';
+const jadvise = '/jadvise';
 const minesweeper = '/minesweeper';
 const iphone_memory_game = '/iphone_memory_game';
 
@@ -35,6 +36,7 @@ directory = {
 		'game': iphone_memory_game,
 		'': memory_simulator,
 	},
+	'jad': jadvise,
 	'mine': minesweeper,
 	'iphone': iphone_memory_game,
 	'temp': tempbot,
@@ -79,6 +81,7 @@ college_projects = [
 	packpackmonsters,
 	cpu_simulator,
 	memory_simulator,
+	jadvise,
 	minesweeper,
 	iphone_memory_game
 ];
