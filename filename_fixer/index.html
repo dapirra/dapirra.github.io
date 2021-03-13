@@ -25,7 +25,9 @@
 				<h2>Filename Fixer</h2>
 				<script src="https://gist.github.com/dapirra/553076316e5e6e50b724f7baea8af5c7.js"></script>
 				<h4>Backstory:</h4>
-				<p>I created this script because I download a lot of files to my Android phone, and occasionally, I'll come across a file named with characters that are not acceptable to Windows (\ / : * ? " &#60; &#62; |). I use <a target="_blank" href="https://syncthing.net/">Syncthing</a> to synchronize files from my phone to my desktop, however, Syncthing will refuse to sync files with these invalid characters in their names and will report them as an error. I solved this problem by creating a python script that will substitute problem characters with valid alternative characters. I used <a target="_blank" href="https://termux.com/">Termux</a> to run this python script on my phone.</p>
+				<p>I created this script because I download a lot of files to my Android phone, and occasionally, I'll come across a file named with characters that are not acceptable to Windows:</p>
+				<pre>\ / : * ? " &#60; &#62; |</pre>
+				<p>I use <a target="_blank" href="https://syncthing.net/">Syncthing</a> to synchronize files from my phone to my desktop, however, Syncthing will refuse to sync files with these invalid characters in their names and will report them as an error. I solved this problem by creating a python script that will rename these files, and substitute problem characters with valid alternative characters. I use <a target="_blank" href="https://termux.com/">Termux</a> to run this script on my phone.</p>
 				<h4>Icon Credit:</h4>
 				<p>It's just the rename icon from shell32.dll, created by Microsoft.</p>
 			</article>
