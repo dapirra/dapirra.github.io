@@ -28,7 +28,7 @@ directory = {
 		'': flashcards_app
 	},
 	'pack': packpackmonsters,
-	'monst': packpackmonsters,
+	'mons': packpackmonsters,
 	'cpu': cpu_simulator,
 	'mem': {
 		'sim': memory_simulator,
@@ -36,7 +36,9 @@ directory = {
 		'game': iphone_memory_game,
 		'': memory_simulator,
 	},
+	'ram': memory_simulator,
 	'jad': jadvise,
+	'adv': jadvise,
 	'mine': minesweeper,
 	'iphone': iphone_memory_game,
 	'temp': tempbot,
@@ -48,6 +50,7 @@ directory = {
 	'restart': router_restarter,
 	'uniform': uniform_generator,
 	'mock': flashcards_mockup,
+	'eop': edge_only_plugin,
 	'edge': edge_only_plugin,
 	'plug': edge_only_plugin,
 	'paint': edge_only_plugin,
