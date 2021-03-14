@@ -22,6 +22,9 @@ const procedurally_generated_forest = '/procedurally_generated_forest';
 const filename_fixer = '/filename_fixer';
 const mips_happy_birthday = '/mips_happy_birthday';
 
+// Other
+const resume = '/David%20Pirraglia%20Resume.pdf';
+
 directory = {
 	'flash': {
 		'mock': flashcards_mockup,
@@ -58,7 +61,8 @@ directory = {
 	'file': filename_fixer,
 	'fix': filename_fixer,
 	'happy': mips_happy_birthday,
-	'birth': mips_happy_birthday
+	'birth': mips_happy_birthday,
+	'resume': resume
 };
 
 function guessPageDict(url, dir) {
