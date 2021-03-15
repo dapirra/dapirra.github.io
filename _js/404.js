@@ -26,6 +26,7 @@ const mips_happy_birthday = '/mips_happy_birthday';
 const resume = '/David%20Pirraglia%20Resume.pdf';
 
 directory = {
+	'resume': resume,
 	'flash': {
 		'mock': flashcards_mockup,
 		'': flashcards_app
@@ -61,8 +62,7 @@ directory = {
 	'file': filename_fixer,
 	'fix': filename_fixer,
 	'happy': mips_happy_birthday,
-	'birth': mips_happy_birthday,
-	'resume': resume
+	'birth': mips_happy_birthday
 };
 
 function guessPageDict(url, dir) {
