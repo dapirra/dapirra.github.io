@@ -35,6 +35,23 @@ testguessPageDict = function () {
 	console.assert(guessPageDict('fix') === filename_fixer);
 	console.assert(guessPageDict('happy') === mips_happy_birthday);
 	console.assert(guessPageDict('birth') === mips_happy_birthday);
+
+	// Old URL format
+	console.assert(guessPageDict('/apng_thing.html') === apng_thing);
+	console.assert(guessPageDict('/autoit_multiprocessing.html') === autoit_multiprocessing);
+	console.assert(guessPageDict('/cpu_simulator.html') === cpu_simulator);
+	console.assert(guessPageDict('/filename_fixer.html') === filename_fixer);
+	console.assert(guessPageDict('/flashcards_app.html') === flashcards_app);
+	console.assert(guessPageDict('/flashcards_mockup.html') === flashcards_mockup);
+	console.assert(guessPageDict('/iphone_memory_game.html') === iphone_memory_game);
+	console.assert(guessPageDict('/memory_simulator.html') === memory_simulator);
+	console.assert(guessPageDict('/minesweeper.html') === minesweeper);
+	console.assert(guessPageDict('/mips_happy_birthday.html') === mips_happy_birthday);
+	console.assert(guessPageDict('/packpackmonsters.html') === packpackmonsters);
+	console.assert(guessPageDict('/procedurally_generated_forest.html') === procedurally_generated_forest);
+	console.assert(guessPageDict('/tempbot.html') === tempbot);
+	console.assert(guessPageDict('/uniform_generator.html') === uniform_generator);
+
 }
 
 window.addEventListener('load', function() {
