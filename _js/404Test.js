@@ -1,4 +1,4 @@
-testguessPageDict = function () {
+function testGuessPageDict() {
 	console.assert(guessPageDict('error') === resume);
 	console.assert(guessPageDict('resum') === resume);
 	console.assert(guessPageDict('resume') === resume);
@@ -55,5 +55,5 @@ testguessPageDict = function () {
 }
 
 window.addEventListener('load', function() {
-	testguessPageDict();
+	testGuessPageDict();
 }, false);
