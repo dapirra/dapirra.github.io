@@ -25,7 +25,7 @@ const mips_happy_birthday = '/mips_happy_birthday';
 // Other
 const resume = '/David%20Pirraglia%20Resume.pdf';
 
-directory = {
+const directory = {
 	'resum': resume,
 	'flash': {
 		'mock': flashcards_mockup,
@@ -65,9 +65,9 @@ directory = {
 	'birth': mips_happy_birthday
 };
 
-function guessPageDict(url, dir) {
+function guessPageDict(url, dir=directory) {
 	for (item in dir) {
-		if (url.includes(item, 1)) {
+		if (url.includes(item)) {
 			return typeof dir[item] === 'string' ?
 				dir[item] : guessPageDict(url, dir[item]);
 		}
@@ -75,7 +75,7 @@ function guessPageDict(url, dir) {
 }
 
 if (!location.pathname.startsWith('/404')) {
-	var page = guessPageDict(location.pathname, directory);
+	var page = guessPageDict(location.pathname);
 	if (page !== undefined) {
 		location.replace(page);
 	}
