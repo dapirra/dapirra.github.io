@@ -8,6 +8,29 @@
 	<title>David Pirraglia: Assembly Minesweeper</title>
 	<link rel="stylesheet" href="/_css/lib/w3.min.css">
 	<link rel="stylesheet" href="/_css/style.css" type="text/css" />
+	<!-- https://gist.github.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2 -->
+	<link rel="stylesheet" href="/_css/gist/GistDarkCode.css" type="text/css" />
+	<link rel="stylesheet" href="/_css/gist/GistResize.css" type="text/css" />
+	<style>
+		body .gist {
+			display: none;
+		}
+	</style>
+	<script> // Handles the 'Expand Code' button
+		window.addEventListener('load', function() {
+			var expandCode = document.getElementById('expandCode');
+			expandCode.onclick = function _() {
+				if (_.isCodeExpanded) {
+					expandCode.textContent = 'Expand Code';
+					document.querySelector('body .gist').style.display = 'none';
+				} else {
+					expandCode.textContent = 'Collapse Code';
+					document.querySelector('body .gist').style.display = 'block';
+				}
+				_.isCodeExpanded = !_.isCodeExpanded;
+			};
+		}, false);
+	</script>
 	<script src="/_js/main.js"></script>
 </head>
 <body>
@@ -23,7 +46,8 @@
 				<video autoplay loop muted style="max-width: 100%;">
 					<source src="Minesweeper.mp4" type="video/mp4">
 				</video>
-				<p><a href="https://gist.github.com/dapirra/6e9eaf7cd4d8383cccaa7fe110eddbbc" target="_blank" rel="noopener noreferrer">View on Github</a></p>
+				<p><button id="expandCode" class="w3-button w3-dark-gray w3-round">Expand Code</button></p>
+				<script src="https://gist.github.com/dapirra/6e9eaf7cd4d8383cccaa7fe110eddbbc.js"></script>
 				<h4>About:</h4>
 				<p>This Minesweeper game was created with the MIPS assembly language and runs on Stony Brook's customized version of the MARS Emulator. I created this when I was a student at Suffolk County Community College in a Computer Architecture class.</p>
 				<p>I made my own customizations on top of Stony Brook's customizations as well, hence the window having a gray theme. I have not publicly released my custom version of the MARS Emulator yet, but plan on updating this page when I do.</p>
