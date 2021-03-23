@@ -1,0 +1,4 @@
+body .gist-data {
+	max-height: 510px;
+	overflow-y: scroll;
+}
