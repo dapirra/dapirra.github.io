@@ -14,7 +14,7 @@ window.addEventListener('load', function() {
 }, false);
 
 function filterTiles(searchText) {
-	searchText = searchText.trim().toLowerCase();
+	searchText = searchText.replaceAll(/\s|\.|'/g, '').toLowerCase();
 
 	for (const tile of tiles) {
 		var tileText = tile.textContent.replaceAll(/\s/g, '').toLowerCase();
