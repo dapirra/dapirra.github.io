@@ -34,4 +34,14 @@ function filterTiles(searchText) {
 			element.classList.add('hidden');
 		}
 	}
+
+	// Special case for searching Java to hide JavaScript projects
+	if (searchText === 'java') {
+		for (const tile of tiles) {
+			var tileText = tile.textContent.replaceAll(/\s/g, '').toLowerCase();
+			if (tileText.includes('javascript')) {
+				tile.classList.add('hidden');
+			}
+		}
+	}
 }
