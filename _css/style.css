@@ -52,6 +52,20 @@ header {
   font-size: 1rem;
   text-decoration: none;
 }
+#search_bar_container {
+  margin-top: 0.5em;
+  text-align: center;
+}
+#search_bar {
+  background-color: #444;
+  border-radius: 5px;
+  border: none;
+  color: #aaa;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.hidden {
+  display: none;
+}
 #homepage_content_container {
   padding: 1em;
   display: grid;
