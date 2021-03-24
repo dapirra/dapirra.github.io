@@ -71,14 +71,43 @@ header {
 #search_bar_container {
 	margin-top: 0.5em;
 	text-align: center;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 250px;
 }
 
 #search_bar {
-	background-color: @secondary-color;
-	border-radius: 5px;
 	border: none;
 	color: @text-color;
+	background-color: @secondary-color;
+	border-radius: 5px;
+	padding-right: 1.5em;
+	width: 200px;
 	.card();
+}
+
+#search_bar:focus {
+	outline: none;
+}
+
+#search_clear {
+	font-family: monospace;
+//	position: relative;
+	position: absolute;
+	top: -2px;
+//	right: 1.5em;
+	right: 1.25em;
+//	padding: 5px 10px;
+	padding: 3px 10px;
+	background-color: #111;
+	cursor: pointer;
+	user-select: none;
+	border-radius: 50%;
+}
+
+#search_clear:hover {
+	color: @text-color + 20;
+	background-color: #111 + 5;
 }
 
 .hidden {
