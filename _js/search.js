@@ -2,7 +2,7 @@ window.addEventListener('load', function() {
 	var search_bar = document.getElementById('search_bar');
 	var search_clear = document.getElementById('search_clear');
 	section_titles = document.querySelectorAll('.section_title');
-	tiles = document.querySelectorAll('.card');
+	tiles = document.querySelectorAll('#homepage_content_container > a');
 	search_bar.oninput = function() {
 		filterTiles(search_bar.value);
 	}
@@ -17,12 +17,11 @@ function filterTiles(searchText) {
 	searchText = searchText.trim().toLowerCase();
 
 	for (const tile of tiles) {
-		var tileTitle = tile.firstElementChild.firstElementChild.textContent.toLowerCase();
-		var tileParent = tile.parentElement;
-		if (tileTitle.includes(searchText)) {
-			tileParent.classList.remove('hidden');
+		var tileText = tile.textContent.replaceAll(/\s/g, '').toLowerCase();
+		if (tileText.includes(searchText)) {
+			tile.classList.remove('hidden');
 		} else {
-			tileParent.classList.add('hidden');
+			tile.classList.add('hidden');
 		}
 	}
 
