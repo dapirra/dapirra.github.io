@@ -17,6 +17,8 @@ function testGuessPageDict() {
 	console.assert(guessPageDict('adv') === jadvise);
 	console.assert(guessPageDict('mine') === minesweeper);
 	console.assert(guessPageDict('iphone') === iphone_memory_game);
+	console.assert(guessPageDict('lijf') === long_island_job_filter);
+	console.assert(guessPageDict('long') === long_island_job_filter);
 	console.assert(guessPageDict('temp') === tempbot);
 	console.assert(guessPageDict('png') === apng_thing);
 	console.assert(guessPageDict('multi') === autoit_multiprocessing);

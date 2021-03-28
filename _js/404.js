@@ -8,6 +8,7 @@ const minesweeper = '/minesweeper';
 const iphone_memory_game = '/iphone_memory_game';
 
 // Personal Projects
+const long_island_job_filter = '/long_island_job_filter';
 const tempbot = '/tempbot';
 const apng_thing = '/apng_thing';
 const autoit_multiprocessing = '/autoit_multiprocessing';
@@ -45,6 +46,8 @@ const directory = {
 	'adv': jadvise,
 	'mine': minesweeper,
 	'iphone': iphone_memory_game,
+	'lijf': long_island_job_filter,
+	'long': long_island_job_filter,
 	'temp': tempbot,
 	'png': apng_thing,
 	'multi': autoit_multiprocessing,
@@ -94,6 +97,7 @@ college_projects = [
 ];
 
 personal_projects = [
+	long_island_job_filter,
 	tempbot,
 	apng_thing,
 	autoit_multiprocessing,

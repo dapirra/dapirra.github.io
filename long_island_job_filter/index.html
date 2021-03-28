@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="David Pirraglia">
+	<meta name="description" content="Filters out jobs that are not on Long Island from the search results of popular job search engines.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>David Pirraglia: Long Island Job Filter</title>
+	<link rel="stylesheet" href="/_css/lib/w3.min.css">
+	<link rel="stylesheet" href="/_css/style.css" type="text/css" />
+	<script src="/_js/gallery.js"></script>
+	<script src="/_js/main.js"></script>
+</head>
+<body>
+	<div id="page_container" class="w3-animate-opacity">
+		<header>
+			<a href="/" id="header_text">David Pirraglia</a>
+			<a href="/" id="back_button">&#10094;</a>
+			<a href="/David%20Pirraglia%20Resume.pdf" id="resume_link">Resume</a>
+		</header>
+		<div id="content_container">
+			<article>
+				<h2>Long Island Job Filter</h2>
+				<div id="image_gallery">
+					<a href="Long%20Island%20Job%20Filter%20Screenshot.png">
+						<img alt="Long Island Job Filter Screenshot" src="Long%20Island%20Job%20Filter%20Screenshot.png" style="max-height: 600px; max-width: 100%"/>
+					</a>
+				</div>
+				<p>
+					<a href="https://github.com/dapirra/Long_Island_Job_Filter" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+				</p>
+				<h4>About:</h4>
+				<p>Do you live on Long Island? Are you tired of searching for jobs and getting results in Connecticut or New Jersey or even in upstate New York? I know I sure am. If you answered yes to any of the questions above, then I have the script for you...</p>
+				<h4>How it works:</h4>
+				<p>Any job results that are not located in Suffolk or Nassau County are marked in red, making it much easier to distinguish jobs on Long Island from jobs that aren't. See for yourself in the image above.</p>
+				<h4>How to install:</h4>
+				<ol>
+					<li>Download the <a href="https://www.tampermonkey.net/" target="_blank" rel="noopener noreferrer">Tampermonkey</a> extension to your browser.</li>
+					<li>Click on this <a href="https://github.com/dapirra/Long_Island_Job_Filter/raw/master/LIJF.user.js" target="_blank" rel="noopener noreferrer">link</a> to install the script.</li>
+					<li>Press the install button.</li>
+					<li>That's it!</li>
+				</ol>
+				<h4>Supported websites:</h4>
+				<ul>
+					<li><a href="https://www.indeed.com" target="_blank" rel="noopener noreferrer">Indeed</a></li>
+					<li><a href="https://www.ziprecruiter.com" target="_blank" rel="noopener noreferrer">ZipRecruiter</a></li>
+					<li><a href="https://www.monster.com" target="_blank" rel="noopener noreferrer">Monster</a></li>
+					<li><a href="https://www.glassdoor.com/" target="_blank" rel="noopener noreferrer">Glassdoor</a></li>
+				</ul>
+				<h4>Things to watch out for:</h4>
+				<ul>
+					<li>Any future visual update to the layout of the supported websites could break the script for said site.</li>
+					<li>There are 2 towns of Woodbury in New York, one in <a target="_blank" rel="noopener noreferrer" title="Woodbury, Nassau County, NY" href="https://www.google.com/maps/place/Woodbury,+Nassau+County,+NY">Nassau County</a> and one in <a target="_blank" rel="noopener noreferrer" title="Woodbury, Orange County, NY" href="https://www.google.com/maps/place/Woodbury,+Orange+County,+NY">Orange County</a>. This script can't tell one from the other and will leave any job located in Woodbury unmarked. It's up to the user to figure out which Woodbury.</li>
+					<li>This script should also work with <a target="_blank" rel="noopener noreferrer" href="https://www.greasespot.net/">Greasemonkey</a> or <a target="_blank" rel="noopener noreferrer" href="https://violentmonkey.github.io/">Violentmonkey</a> as well, and was actually developed with Violentmonkey, however, I recommend Tampermonkey because it supports the most browsers.</li>
+				</ul>
+				<h4>Libraries used:</h4>
+				<ul>
+					<li>arrive.js 2.4.1:
+						<ul>
+							<li>
+								<a target="_blank" rel="noopener noreferrer" href="https://github.com/uzairfarooq/arrive/">https://github.com/uzairfarooq/arrive/</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<h4>Tile Icon Credit:</h4>
+				<p>I quickly threw the image together with PowerPoint. I downloaded the red Long Island clipart from here: <a target="_blank" rel="noopener noreferrer" href="https://www.nicepng.com/maxp/u2q8w7a9a9t4q8a9/">https://www.nicepng.com/maxp/u2q8w7a9a9t4q8a9/</a></p>
+			</article>
+		</div>
+		<footer>
+			<span class="footer_left">Website created by David Pirraglia</span>
+			<span class="footer_right"><a href="https://github.com/dapirra/dapirra.github.io" target="_blank" rel="noopener noreferrer">View Source</a></span>
+		</footer>
+	</div>
+</body>
+</html>
