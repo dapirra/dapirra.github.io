@@ -10,8 +10,13 @@ window.addEventListener('load', function() {
 		search_bar.value = '';
 		filterTiles('');
 	}
-
 }, false);
+
+window.onpageshow = function() {
+	if (search_bar.value !== '') {
+		filterTiles(search_bar.value);
+	}
+}
 
 function filterTiles(searchText) {
 	searchText = searchText.replaceAll(/\s|\.|'/g, '').toLowerCase();
