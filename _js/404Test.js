@@ -6,6 +6,7 @@ function testGuessPageDict() {
 	console.assert(guessPageDict('flashmock') === flashcards_mockup);
 	console.assert(guessPageDict('pack') === packpackmonsters);
 	console.assert(guessPageDict('mons') === packpackmonsters);
+	console.assert(guessPageDict('ppm') === packpackmonsters);
 	console.assert(guessPageDict('cpu') === cpu_simulator);
 	console.assert(guessPageDict('cpusim') === cpu_simulator);
 	console.assert(guessPageDict('mem') === memory_simulator);

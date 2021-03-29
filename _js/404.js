@@ -34,6 +34,7 @@ const directory = {
 	},
 	'pack': packpackmonsters,
 	'mons': packpackmonsters,
+	'ppm': packpackmonsters,
 	'cpu': cpu_simulator,
 	'mem': {
 		'sim': memory_simulator,
