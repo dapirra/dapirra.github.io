@@ -79,7 +79,7 @@ function guessPageDict(url, dir=directory) {
 }
 
 if (!location.pathname.startsWith('/404')) {
-	var page = guessPageDict(location.pathname);
+	var page = guessPageDict(location.pathname.toLowerCase());
 	if (page !== undefined) {
 		location.replace(page);
 	}
