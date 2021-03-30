@@ -7,7 +7,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>David Pirraglia: Router Restarter</title>
 	<link rel="stylesheet" href="/_css/lib/w3.min.css">
+	<!-- https://gist.github.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2 -->
+	<link rel="stylesheet" href="/_css/gist/GistDarkCode.css" type="text/css" />
+	<link rel="stylesheet" href="/_css/gist/GistMaxSize.css" type="text/css" />
 	<link rel="stylesheet" href="/_css/style.css" type="text/css" />
+	<script> // Handles the 'Expand Code' button
+		window.addEventListener('load', function() {
+			var expandCode = document.getElementById('expandCode');
+			expandCode.onclick = function _() {
+				expandCode.textContent = _.isCodeExpanded ? 'Expand Code' : 'Collapse Code';
+				document.getElementById('gist_code').classList.toggle('hidden');
+				_.isCodeExpanded = !_.isCodeExpanded;
+			};
+		}, false);
+	</script>
 	<script src="/_js/main.js"></script>
 	<script src="/_js/last_commit.js"></script>
 </head>
@@ -20,11 +33,14 @@
 		</header>
 		<div id="content_container">
 			<article>
-				<h2>Router Restarter</h2>
+				<h2>Router Restarter Library</h2>
 				<img width="250" style="max-width: 100%" alt="Router Icon" src="Cisco_Wireless-8_AP_Customized.svg">
 				<p>
-					<a href="https://gist.github.com/dapirra/5992b0aad1cb8eba8f1ca99f651cf371" target="_blank" rel="noopener noreferrer">View Router Restarter Library Source Code</a>
+					<button id="expandCode" class="w3-button w3-dark-gray w3-round w3-hover-blue">Expand Code</button>
 				</p>
+				<div id="gist_code" class="hidden">
+					<script src="https://gist.github.com/dapirra/5992b0aad1cb8eba8f1ca99f651cf371.js"></script>
+				</div>
 				<h4>Backstory:</h4>
 				<p>Some time ago, I used to have 2 Linksys WRT54GL routers at home, both of them with custom firmware I installed to them (so that I could extend their range and do other fun stuff with them). One of them had <a target="_blank" rel="noopener noreferrer" href="https://www.polarcloud.com/tomato/">Tomato</a> installed to it and the other one had <a target="_blank" rel="noopener noreferrer" href="https://dd-wrt.com/">DD-WRT</a> installed. Towards the end of these routers lives, Wi-Fi connectivity became a problem, requiring them to be restarted at random, at least once or twice a week. However, any devices that were wired to the network would function fine.</p>
 				<p>In order to solve this problem, I created something that could restart the routers entirely, check if the routers were still accessible through their http interface, and could also turn the Wi-Fi setting of the routers on and off. I decided to only release the library I created to restart these routers. <a target="_blank" rel="noopener noreferrer" href="https://2.python-requests.org/en/master/user/install/">Requests</a> is the only dependency that is required. I no longer use those 2 routers anymore and cannot effectively test/clean up the full project to be released publicly. The full project was a Discord bot that ran on my desktop, which was hardwired to the network. This meant that if the Wi-Fi went down, I could use the mobile data connection of my phone to send commands to the Discord bot running on my desktop, which would then connect to the  routers, telling them to restart.</p>
