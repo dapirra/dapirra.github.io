@@ -10,7 +10,6 @@ const iphone_memory_game = '/iphone_memory_game';
 // Personal Projects
 const long_island_job_filter = '/long_island_job_filter';
 const tempbot = '/tempbot';
-const apng_thing = '/apng_thing';
 const autoit_multiprocessing = '/autoit_multiprocessing';
 const monitor_off = '/monitor_off';
 const router_restarter = '/router_restarter';
@@ -21,13 +20,14 @@ const flashcards_mockup = '/flashcards_mockup';
 // Snippets
 const procedurally_generated_forest = '/procedurally_generated_forest';
 const filename_fixer = '/filename_fixer';
+const apng_thing = '/apng_thing';
 const mips_happy_birthday = '/mips_happy_birthday';
 
 // Other
 const resume = '/David%20Pirraglia%20Resume.pdf';
 
 const directory = {
-	'resum': resume,
+	'resu': resume,
 	'flash': {
 		'mock': flashcards_mockup,
 		'': flashcards_app
@@ -50,21 +50,21 @@ const directory = {
 	'lijf': long_island_job_filter,
 	'long': long_island_job_filter,
 	'temp': tempbot,
-	'png': apng_thing,
-	'multi': autoit_multiprocessing,
 	'mon': monitor_off,
 	'off': monitor_off,
-	'route': router_restarter,
-	'restart': router_restarter,
-	'uniform': uniform_generator,
-	'mock': flashcards_mockup,
 	'eop': edge_only_plugin,
 	'edge': edge_only_plugin,
 	'plug': edge_only_plugin,
 	'paint': edge_only_plugin,
+	'multi': autoit_multiprocessing,
+	'route': router_restarter,
+	'restart': router_restarter,
+	'uniform': uniform_generator,
+	'mock': flashcards_mockup,
 	'forest': procedurally_generated_forest,
 	'file': filename_fixer,
 	'fix': filename_fixer,
+	'png': apng_thing,
 	'happy': mips_happy_birthday,
 	'birth': mips_happy_birthday
 };
@@ -100,18 +100,18 @@ college_projects = [
 personal_projects = [
 	long_island_job_filter,
 	tempbot,
-	apng_thing,
-	autoit_multiprocessing,
 	monitor_off,
+	autoit_multiprocessing,
+	edge_only_plugin,
 	router_restarter,
 	uniform_generator,
-	edge_only_plugin,
 	flashcards_mockup
 ];
 
 snippets = [
 	procedurally_generated_forest,
 	filename_fixer,
+	apng_thing,
 	mips_happy_birthday
 ];
 
