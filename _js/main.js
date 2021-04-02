@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
 	back_button.onclick = function(e) {
 		e.preventDefault();
 		if (document.referrer === 'https://dapirra.github.io/' ||
-		document.referrer.includes('127.0.0.1')) {
+		document.referrer.startsWith('http://127.0.0.1')) {
 			history.back();
 		} else {
 			location.href = '/';
