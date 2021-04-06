@@ -69,12 +69,17 @@ const directory = {
 	'birth': mips_happy_birthday
 };
 
-function guessPageDict(url, dir=directory) {
+function guessPageDict(url, dir=directory, _couldBeDupChars=true) {
+	console.log('test: ' + url);
 	for (item in dir) {
 		if (url.includes(item)) {
 			return typeof dir[item] === 'string' ?
-				dir[item] : guessPageDict(url, dir[item]);
+				dir[item] : guessPageDict(url, dir[item], _couldBeDupChars);
 		}
+	}
+
+	if (_couldBeDupChars) { // Remove duplicate characters and try again
+		return guessPageDict(url.replace(/(.)\1+/g, '$1'), dir, false);
 	}
 }
 
