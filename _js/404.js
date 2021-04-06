@@ -1,5 +1,5 @@
 // College Projects
-const flashcards_app = '/flashcards_app';
+const flashcards_app = '/flashcards';
 const packpackmonsters = '/packpackmonsters';
 const cpu_simulator = '/cpu_simulator';
 const memory_simulator = '/memory_simulator';
