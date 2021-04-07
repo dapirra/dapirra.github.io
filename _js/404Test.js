@@ -2,7 +2,7 @@ function testGuessPageDict() {
 	console.assert(guessPageDict('error') === resume);
 	console.assert(guessPageDict('resu') === resume);
 	console.assert(guessPageDict('resume') === resume);
-	console.assert(guessPageDict('flash') === flashcards_app);
+	console.assert(guessPageDict('flash') === flashcards);
 	console.assert(guessPageDict('flashmock') === flashcards_mockup);
 	console.assert(guessPageDict('pack') === packpackmonsters);
 	console.assert(guessPageDict('mons') === packpackmonsters);
@@ -44,7 +44,7 @@ function testGuessPageDict() {
 	console.assert(guessPageDict('/autoit_multiprocessing.html') === autoit_multiprocessing);
 	console.assert(guessPageDict('/cpu_simulator.html') === cpu_simulator);
 	console.assert(guessPageDict('/filename_fixer.html') === filename_fixer);
-	console.assert(guessPageDict('/flashcards_app.html') === flashcards_app);
+	console.assert(guessPageDict('/flashcards_app.html') === flashcards);
 	console.assert(guessPageDict('/flashcards_mockup.html') === flashcards_mockup);
 	console.assert(guessPageDict('/iphone_memory_game.html') === iphone_memory_game);
 	console.assert(guessPageDict('/memory_simulator.html') === memory_simulator);

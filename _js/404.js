@@ -1,5 +1,5 @@
 // College Projects
-const flashcards_app = '/flashcards';
+const flashcards = '/flashcards';
 const packpackmonsters = '/packpackmonsters';
 const cpu_simulator = '/cpu_simulator';
 const memory_simulator = '/memory_simulator';
@@ -30,7 +30,7 @@ const directory = {
 	'resu': resume,
 	'flash': {
 		'mock': flashcards_mockup,
-		'': flashcards_app
+		'': flashcards
 	},
 	'pack': packpackmonsters,
 	'mons': packpackmonsters,
@@ -93,7 +93,7 @@ if (!location.pathname.startsWith('/404')) {
 ///////////////////////////// Must be the 404 page /////////////////////////////
 
 college_projects = [
-	flashcards_app,
+	flashcards,
 	packpackmonsters,
 	cpu_simulator,
 	memory_simulator,
