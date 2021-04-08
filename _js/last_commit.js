@@ -37,6 +37,7 @@ function setUpdatedValue(date) {
 	var element = document.querySelector('.footer_right').firstElementChild;
 	// element.innerText = (window.innerWidth > 400 ? 'Last Commit: ' : '') + date;
 	element.innerText = 'Updated: ' + date;
+	element.title = 'This element uses AJAX to update its value.';
 	if (window.innerWidth < 400) {
 		document.querySelector('.footer_left').textContent = 'Created by David Pirraglia';
 	}
