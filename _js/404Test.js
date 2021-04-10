@@ -1,8 +1,12 @@
 function testGuessPageDict() {
-	console.assert(guessPageDict('error') === resume);
+	console.assert(guessPageDict('error') === resume); // Intentional error
 	console.assert(guessPageDict('resu') === resume);
+	console.assert(guessPageDict('reeeeeeeeeeeeeeesume') === resume);
+	console.assert(guessPageDict('packpackresu') === resume);
+	console.assert(guessPageDict('flashresue') === resume);
 	console.assert(guessPageDict('resume') === resume);
 	console.assert(guessPageDict('flash') === flashcards);
+	console.assert(guessPageDict('flaash') === flashcards);
 	console.assert(guessPageDict('flashmock') === flashcards_mockup);
 	console.assert(guessPageDict('pack') === packpackmonsters);
 	console.assert(guessPageDict('mons') === packpackmonsters);
@@ -23,7 +27,9 @@ function testGuessPageDict() {
 	console.assert(guessPageDict('temp') === tempbot);
 	console.assert(guessPageDict('mon') === monitor_off);
 	console.assert(guessPageDict('off') === monitor_off);
+	console.assert(guessPageDict('screen') === monitor_off);
 	console.assert(guessPageDict('multi') === autoit_multiprocessing);
+	console.assert(guessPageDict('proc') === autoit_multiprocessing);
 	console.assert(guessPageDict('eop') === edge_only_plugin);
 	console.assert(guessPageDict('edge') === edge_only_plugin);
 	console.assert(guessPageDict('plug') === edge_only_plugin);

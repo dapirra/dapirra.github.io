@@ -52,6 +52,7 @@ const directory = {
 	'temp': tempbot,
 	'mon': monitor_off,
 	'off': monitor_off,
+	'screen': monitor_off,
 	'eop': edge_only_plugin,
 	'edge': edge_only_plugin,
 	'plug': edge_only_plugin,
@@ -89,6 +90,14 @@ if (!location.pathname.startsWith('/404')) {
 		location.replace(page);
 	}
 }
+
+// if (!location.pathname.startsWith('/404')) {
+// 	var userURL = location.pathname.toLowerCase();
+// 	var guessedURL = guessPageDict(userURL);
+// 	if (guessedURL !== undefined) {
+// 		location.replace(guessedURL);
+// 	}
+// }
 
 ///////////////////////////// Must be the 404 page /////////////////////////////
 
