@@ -58,7 +58,7 @@ window.addEventListener('load', function () {
 		}
 	};
 
-	image_gallery.onmousewheel = function (e) {
+	image_gallery.onwheel = function (e) {
 		e.preventDefault();
 		if (e.deltaY > 0) {
 			image_gallery.scrollLeft += 50;
