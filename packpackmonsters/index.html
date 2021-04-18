@@ -11,10 +11,19 @@
 	<script> // Handles the 'Expand Preview' button
 		window.addEventListener('load', function() {
 			var expandButton = document.getElementById('expandButton');
-			expandButton.onclick = function _() {
-				expandButton.textContent = _.isExpanded ? 'Expand Preview' : 'Collapse Preview';
-				document.getElementById('main_menu_preview').classList.toggle('hidden');
-				_.isExpanded = !_.isExpanded;
+			var main_menu_preview = document.getElementById('main_menu_preview');
+			expandButton.onclick = function () {
+				main_menu_preview.innerHTML = `
+					<div class="glitch-embed-wrap" style="height: 640px; width: 360px; max-width: 100%;">
+						<iframe src="https://glitch.com/embed/#!/embed/packpackmonsters-main-menu?path=index.html&previewSize=100&currentTheme=cosmos" title="packpackmonsters-main-menu on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;" class="theme-cosmos"></iframe>
+					</div>
+				`;
+
+				(expandButton.onclick = function _() {
+					expandButton.textContent = _.isExpanded ? 'Expand Preview' : 'Collapse Preview';
+					main_menu_preview.classList.toggle('hidden');
+					_.isExpanded = !_.isExpanded;
+				})();
 			};
 		}, false);
 	</script>
@@ -78,11 +87,7 @@
 				<p>
 					<button id="expandButton" class="w3-button w3-dark-gray w3-round w3-hover-blue">Expand Preview</button>
 				</p>
-				<div id="main_menu_preview" class="hidden">
-					<div class="glitch-embed-wrap" style="height: 640px; width: 360px; max-width: 100%;">
-						<iframe src="https://glitch.com/embed/#!/embed/packpackmonsters-main-menu?path=index.html&previewSize=100" title="packpackmonsters-main-menu on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;"></iframe>
-					</div>
-				</div>
+				<div id="main_menu_preview" class="hidden"></div>
 				<h4>Usage of SQLite:</h4>
 				<p>The information for all the monsters is read in from an SQLite file (<a target="_blank" rel="noopener noreferrer" href="https://github.com/dapirra/PackPackMonsters/blob/master/app/src/main/assets/databases/AllMonsters.db">AllMonsters.db</a>).</p>
 				<h4>Credits:</h4>
