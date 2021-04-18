@@ -276,8 +276,15 @@ footer > .footer_right a:hover {
   transform: translateY(-50%);
   right: 0.5em;
 }
-#play_button {
-  width: 150px;
+.badge {
+  max-width: 150px;
+  width: 100%;
+  margin: 2.5px 0;
+}
+@media (max-width: 450px) {
+  .badge {
+    width: 45%;
+  }
 }
 pre {
   padding: 10px;

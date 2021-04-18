@@ -314,8 +314,14 @@ footer {
 
 // Misc
 
-#play_button {
-	width: 150px;
+.badge {
+	max-width: 150px;
+	width: 100%;
+	margin: 2.5px 0;
+
+	@media (max-width: 450px) {
+		width: 45%;
+	}
 }
 
 pre {
