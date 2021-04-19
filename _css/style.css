@@ -40,7 +40,7 @@ header {
   left: 0;
   padding: 0 0.4rem;
   bottom: 0;
-  font-family: none;
+  font-family: monospace;
   font-size: 2rem;
   font-weight: normal;
   text-decoration: none;
