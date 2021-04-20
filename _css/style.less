@@ -275,6 +275,7 @@ footer {
 	}
 	overflow-y: auto;
 	display: flex;
+	scrollbar-width: none;
 }
 
 .gallery_button {
@@ -394,4 +395,8 @@ pre {
 ::-webkit-scrollbar-thumb {
 	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 	background-color: @scrollbar-foreground;
+}
+
+html {
+	scrollbar-color: @scrollbar-foreground @scrollbar-background;
 }
