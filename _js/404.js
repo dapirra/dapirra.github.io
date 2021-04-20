@@ -17,6 +17,9 @@ const uniform_generator = '/uniform_generator';
 const edge_only_plugin = '/edge_only_plugin';
 const flashcards_mockup = '/flashcards_mockup';
 
+// Exercises
+const miwok = '/miwok';
+
 // Snippets
 const procedurally_generated_forest = '/procedurally_generated_forest';
 const filename_fixer = '/filename_fixer';
@@ -61,6 +64,8 @@ const directory = {
 	'route': router_restarter,
 	'restart': router_restarter,
 	'uniform': uniform_generator,
+	'miw': miwok,
+	'wok': miwok,
 	'mock': flashcards_mockup,
 	'forest': procedurally_generated_forest,
 	'file': filename_fixer,
@@ -122,6 +127,10 @@ personal_projects = [
 	flashcards_mockup
 ];
 
+exercises = [
+	miwok
+];
+
 snippets = [
 	procedurally_generated_forest,
 	filename_fixer,
@@ -140,5 +149,6 @@ window.addEventListener('load', function() {
 	document.getElementById('home').textContent = location.hostname;
 	populateLists(college_projects, document.getElementById('college'));
 	populateLists(personal_projects, document.getElementById('personal'));
+	populateLists(exercises, document.getElementById('exercises'));
 	populateLists(snippets, document.getElementById('snippet'));
 }, false);
