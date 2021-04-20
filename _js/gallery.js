@@ -107,6 +107,6 @@ window.addEventListener('load', function () {
 		image_prev.style.display = 'none';
 		image_next.style.display = 'none';
 		image_gallery.firstElementChild.firstElementChild.style.maxWidth = '100%';
-		image_gallery.onmousewheel = null;
+		image_gallery.onwheel = null;
 	}
 }, false);
