@@ -18,6 +18,7 @@ const edge_only_plugin = '/edge_only_plugin';
 const flashcards_mockup = '/flashcards_mockup';
 
 // Exercises
+const tic_tac_toe= '/tic_tac_toe';
 const miwok = '/miwok';
 
 // Snippets
@@ -64,6 +65,9 @@ const directory = {
 	'route': router_restarter,
 	'restart': router_restarter,
 	'uniform': uniform_generator,
+	'tic': tic_tac_toe,
+	'tac': tic_tac_toe,
+	'toe': tic_tac_toe,
 	'miw': miwok,
 	'wok': miwok,
 	'mock': flashcards_mockup,
@@ -128,6 +132,7 @@ personal_projects = [
 ];
 
 exercises = [
+	tic_tac_toe,
 	miwok
 ];
 
