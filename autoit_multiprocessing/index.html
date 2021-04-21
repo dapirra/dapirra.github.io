@@ -8,7 +8,6 @@
 	<title>David Pirraglia: AutoIt Multiprocessing</title>
 	<link rel="stylesheet" href="/_css/lib/w3.min.css">
 	<link rel="stylesheet" href="/_css/style.css" type="text/css" />
-	<script src="/_js/gallery.js"></script>
 	<script src="/_js/main.js"></script>
 	<script src="/_js/last_commit.js"></script>
 </head>
@@ -22,20 +21,9 @@
 		<div id="content_container">
 			<article>
 				<h2>AutoIt Multiprocessing</h2>
-				<div id="image_gallery">
-					<a href="AutoIt_Multiprocessing.png">
-						<img alt="AutoIt Multiprocessing Screenshot" height="150" src="AutoIt_Multiprocessing.png" />
-					</a>
-					<a href="AutoIt_Multiprocessing_Error.png">
-						<img alt="AutoIt Multiprocessing Error Screenshot" height="150" src="AutoIt_Multiprocessing_Error.png" />
-					</a>
-					<a href="AutoIt_Multiprocessing_Running.png">
-						<img alt="AutoIt Multiprocessing Running Screenshot" height="150" src="AutoIt_Multiprocessing_Running.png" />
-					</a>
-					<a href="AutoIt_Multiprocessing_Done.png">
-						<img alt="AutoIt Multiprocessing Done Screenshot" height="150" src="AutoIt_Multiprocessing_Done.png" />
-					</a>
-				</div>
+				<video autoplay loop muted style="max-width: 100%;">
+					<source src="AutoIt%20Multiprocessing.mp4" type="video/mp4">
+				</video>
 				<p class="info_links">
 					<a download href="https://github.com/dapirra/AutoIt_Multiprocessing/releases/download/v1.0/AutoIt_Multiprocessing.zip">Download EXEs</a>
 					<a href="https://github.com/dapirra/AutoIt_Multiprocessing" target="_blank" rel="noopener noreferrer">View Source</a>
@@ -43,6 +31,7 @@
 				<h4>About:</h4>
 				<p>This program is intended to be a basic example demonstrating how multiprocessing can be achieved in <a target="_blank" rel="noopener noreferrer" href="https://www.autoitscript.com/site/autoit/">AutoIt</a>. AutoIt is a language that does not have any support for multithreading, therefore, this project aims to address that issue by offering an alternative solution.</p>
 				<p>There are 2 components to this example, the Main Process (which handles the GUI) and the Sub Process (which pretends to do a lot of work in the background). The Main Process and the Sub Process are able to communicate with each other via STDIN and STDOUT. The Sub Process can report on its progress to the Main Process and it can notify the Main Process if it runs into a problem, this way the user may decide what to do. The Sub Process can also be paused and unpaused by the Main Process, and can also be canceled. The Main Process also has a textbox that will display everything that it reads in from the Sub Process.</p>
+				<img src="processes.png" alt="Processes Screenshot" style="max-width: 100%">
 				<h4>Icon Credit:</h4>
 				<p>The icon I used for the tile is just a standard AutoIt icon that I stacked up 3 times.</p>
 			</article>
