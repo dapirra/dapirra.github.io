@@ -238,6 +238,30 @@ header {
 			margin-top: 0;
 		}
 
+		& > #page_tags {
+			user-select: none;
+
+			&::before {
+				content: 'Tags: ';
+			}
+
+			& > * {
+				background-color: @scrollbar-background;
+				border-radius: 8px;
+				font-size: 0.8rem;
+				padding: 0.2rem 0.3rem;
+				width: fit-content;
+				color: @text-color;
+				text-decoration-line: none;
+				display: inline;
+				line-height: 1.75rem;
+
+				&:hover {
+					color: @text-color + 20;
+				}
+			}
+		}
+
 		& > .info_links > a:first-child {
 			margin-right: 1.5em;
 		}
