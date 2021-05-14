@@ -74,7 +74,6 @@ header {
   outline: none;
 }
 #search_clear {
-  font-family: monospace;
   position: absolute;
   top: -2px;
   right: 1.25em;
