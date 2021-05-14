@@ -9,7 +9,7 @@
 @scrollbar-background: #111;
 @scrollbar-foreground: #333;
 @header-height: 10rem;
-@tile-size: 20em;
+@tile-size: 20rem;
 @bold: 700;
 @card-width: 330px;
 @border-style: 1px solid @secondary-color;
@@ -19,7 +19,6 @@
 
 body {
 	font-family: @main-font;
-	font-size: 1rem;
 	background-image: @background-image;
 	background-color: @primary-color;
 	color: @text-color;
@@ -27,10 +26,10 @@ body {
 }
 
 #page_container {
-	margin: 1em;
-	padding: 0.75em;
+	margin: 1rem;
+	padding: 0.75rem;
 	background-color: #33333355;
-	border-radius: 1.5em;
+	border-radius: 1.5rem;
 }
 
 header {
@@ -70,7 +69,7 @@ header {
 }
 
 #search_bar_container {
-	margin-top: 1em;
+	margin-top: 1rem;
 	text-align: center;
 	margin-left: 50%;
 	transform: translateX(-50%);
@@ -82,8 +81,8 @@ header {
 	color: @text-color;
 	background-color: @secondary-color;
 	border-radius: 5px;
-	padding-right: 1.5em;
-	padding-left: 0.5em;
+	padding-right: 1.5rem;
+	padding-left: 0.5rem;
 	width: 200px;
 	.card();
 }
@@ -95,7 +94,7 @@ header {
 #search_clear {
 	position: absolute;
 	top: -2px;
-	right: 1.25em;
+	right: 1.25rem;
 	padding: 3px 10px;
 	background-color: #111;
 	cursor: pointer;
@@ -147,7 +146,7 @@ header {
 		& > .cols {
 			display: block;
 			max-width: @tile-size;
-			margin: 1em;
+			margin: 1rem;
 
 			& > .tile_container {
 				background-color: @secondary-color;
@@ -159,7 +158,7 @@ header {
 				& > .img_tile {
 					max-height: 100%;
 					max-width: 100%;
-					padding: 0.7em 0;
+					padding: 0.7rem 0;
 				}
 
 				& > .short_img_tile {
@@ -225,8 +224,8 @@ header {
 		}
 
 		background-color: @primary-color;
-		border-radius: 0.5em;
-		padding: 1em;
+		border-radius: 0.5rem;
+		padding: 1rem;
 
 		& > h2 {
 			@media screen and (min-width: @article-media-min-width) {
@@ -262,7 +261,7 @@ header {
 		}
 
 		& > .info_links > a:first-child {
-			margin-right: 1.5em;
+			margin-right: 1.5rem;
 		}
 
 		& > .info_links > a:last-child {
@@ -272,9 +271,9 @@ header {
 }
 
 footer {
-	font-size: 0.7em;
-	margin-top: 1em;
-	padding-top: 0.4em;
+	font-size: 0.7rem;
+	margin-top: 0.7rem;
+	padding-top: 0.28rem;
 	border-top: @border-style;
 
 	& > .footer_right {
@@ -304,10 +303,10 @@ footer {
 .gallery_button {
 	background-color: #111;
 	border: solid #333 2px;
-	border-radius: 0.5em;
+	border-radius: 1rem;
 	cursor: pointer;
-	font-size: 2em;
-	padding: 0 0.5em;
+	font-size: 2rem;
+	padding: 0 1rem;
 	position: fixed;
 	user-select: none;
 	z-index: 1;
@@ -327,21 +326,21 @@ footer {
 
 #image_close {
 	position: fixed;
-	right: 0.5em;
-	font-size: 2em;
-	padding: 0 0.5em;
+	right: 1rem;
+	font-size: 2rem;
+	padding: 0 1rem;
 }
 
 #image_prev {
 	top: 50%;
 	transform: translateY(-50%);
-	left: 0.5em;
+	left: 1rem;
 }
 
 #image_next {
 	top: 50%;
 	transform: translateY(-50%);
-	right: 0.5em;
+	right: 1rem;
 }
 
 // Misc
@@ -360,7 +359,7 @@ pre {
 	padding: 10px;
 	background-color: @primary-color;
 	border: @border-style;
-	border-radius: 0.5em;
+	border-radius: 0.5rem;
 	overflow-x: scroll;
 
 	&::-webkit-scrollbar {
@@ -371,7 +370,7 @@ pre {
 // Mixins
 
 #base_content_container() {
-	padding: 1em;
+	padding: 1rem;
 }
 
 .absolute_center() {
@@ -400,7 +399,7 @@ pre {
 }
 
 .container {
-	padding: 0.01em 16px;
+	padding: 0.01rem 16px;
 }
 
 // Custom Scrollbar
