@@ -24,7 +24,7 @@ header {
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
-  border-bottom: 1px solid #444;
+  border-bottom: 0.06666667rem solid #444;
 }
 #header_text {
   position: absolute;
@@ -57,26 +57,27 @@ header {
   text-align: center;
   margin-left: 50%;
   transform: translateX(-50%);
-  width: 250px;
+  width: 16.66666667rem;
 }
 #search_bar {
   border: none;
   color: #aaa;
   background-color: #444;
-  border-radius: 5px;
+  border-radius: 0.33333333rem;
   padding-right: 1.5rem;
   padding-left: 0.5rem;
-  width: 200px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  width: 13.333rem;
+  height: 1.6rem;
+  box-shadow: 0 0.13333333rem 0.33333333rem 0 rgba(0, 0, 0, 0.16), 0 0.13333333rem 0.66666667rem 0 rgba(0, 0, 0, 0.12);
 }
 #search_bar:focus {
   outline: none;
 }
 #search_clear {
   position: absolute;
-  top: -2px;
+  top: -0.13333333rem;
   right: 1.25rem;
-  padding: 3px 10px;
+  padding: 0.2rem 0.66666667rem;
   background-color: #111;
   cursor: pointer;
   user-select: none;
@@ -92,7 +93,7 @@ header {
 #homepage_content_container {
   padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 330px);
+  grid-template-columns: repeat(auto-fill, 22rem);
   grid-template-rows: repeat(4, auto);
   justify-content: center;
 }
@@ -127,7 +128,7 @@ header {
   background-color: #444;
   display: flex;
   justify-content: center;
-  height: 175px;
+  height: 11.66666667rem;
   position: relative;
 }
 #homepage_content_container > a > .cols > .tile_container > .img_tile {
@@ -139,13 +140,13 @@ header {
   padding: 15% 0;
 }
 #homepage_content_container > a > .cols > .tile_container > .square_icon {
-  width: 154px;
+  width: 10.26666667rem;
   image-rendering: pixelated;
 }
 #homepage_content_container > a > .cols > .tile_container > .tags {
   position: absolute;
-  bottom: 5px;
-  right: 5px;
+  bottom: 0.33333333rem;
+  right: 0.33333333rem;
   visibility: hidden;
   transform: translateY(50%);
   transition-timing-function: ease-out;
@@ -153,7 +154,7 @@ header {
 }
 #homepage_content_container > a > .cols > .tile_container > .tags > .tag {
   background-color: #222;
-  border-radius: 8px;
+  border-radius: 0.53333333rem;
   font-size: 0.8rem;
   padding: 0.2rem 0.3rem;
   float: right;
@@ -161,7 +162,7 @@ header {
   width: fit-content;
 }
 #homepage_content_container > a > .cols > .tile_container > .tags > .tag:not(:last-child) {
-  margin-bottom: 2px;
+  margin-bottom: 0.13333333rem;
 }
 #homepage_content_container > a > div:hover {
   color: #dcdcdc;
@@ -213,7 +214,7 @@ header {
 }
 #content_container > article > #page_tags > * {
   background-color: #111;
-  border-radius: 8px;
+  border-radius: 0.53333333rem;
   font-size: 0.8rem;
   padding: 0.2rem 0.3rem;
   width: fit-content;
@@ -235,7 +236,7 @@ footer {
   font-size: 0.7rem;
   margin-top: 0.7rem;
   padding-top: 0.28rem;
-  border-top: 1px solid #444;
+  border-top: 0.06666667rem solid #444;
 }
 footer > .footer_right {
   float: right;
@@ -257,14 +258,14 @@ footer > .footer_right a:hover {
   height: 100%;
 }
 #image_gallery img {
-  padding: 5px;
+  padding: 0.33333333rem;
 }
 #image_gallery::-webkit-scrollbar {
   display: none;
 }
 .gallery_button {
   background-color: #111;
-  border: solid #333 2px;
+  border: solid #333 0.13333333rem;
   border-radius: 1rem;
   cursor: pointer;
   font-size: 2rem;
@@ -304,7 +305,7 @@ footer > .footer_right a:hover {
 .badge {
   max-width: 150px;
   width: 100%;
-  margin: 2.5px 0;
+  margin: 0.16666667rem 0;
 }
 @media (max-width: 450px) {
   .badge {
@@ -312,9 +313,9 @@ footer > .footer_right a:hover {
   }
 }
 pre {
-  padding: 10px;
+  padding: 0.66666667rem;
   background-color: #222;
-  border: 1px solid #444;
+  border: 0.06666667rem solid #444;
   border-radius: 0.5rem;
   overflow-x: scroll;
 }
@@ -329,10 +330,24 @@ pre::-webkit-scrollbar {
   color: #70aff6;
 }
 .card {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0.13333333rem 0.33333333rem 0 rgba(0, 0, 0, 0.16), 0 0.13333333rem 0.66666667rem 0 rgba(0, 0, 0, 0.12);
 }
 .container {
-  padding: 0.01rem 16px;
+  padding: 0.01rem 1.06666667rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.66666667rem 0;
+}
+h2 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.33333333rem;
 }
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
