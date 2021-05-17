@@ -222,6 +222,7 @@ header {
   text-decoration-line: none;
   display: inline;
   line-height: 1.75rem;
+  white-space: nowrap;
 }
 #content_container > article > #page_tags > *:hover {
   color: #bebebe;
