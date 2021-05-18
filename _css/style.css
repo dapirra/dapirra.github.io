@@ -142,6 +142,7 @@ header {
 #homepage_content_container > a > .cols > .tile_container > .square_icon {
   width: 10.26666667rem;
   image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 #homepage_content_container > a > .cols > .tile_container > .tags {
   position: absolute;
