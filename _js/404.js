@@ -108,7 +108,7 @@ if (!location.pathname.startsWith('/404')) {
 // 	}
 // }
 
-///////////////////////////// Must be the 404 page /////////////////////////////
+//____________________________Must be the 404 page____________________________\\
 
 college_projects = [
 	flashcards,
