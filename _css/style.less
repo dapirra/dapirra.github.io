@@ -98,10 +98,10 @@ header {
 	width: 13.333rem; // 200px
 	height: 1.6rem;
 	.card();
-}
 
-#search_bar:focus {
-	outline: none;
+	&:focus {
+		outline: none;
+	}
 }
 
 #search_clear {
@@ -113,11 +113,11 @@ header {
 	cursor: pointer;
 	user-select: none;
 	border-radius: 50%;
-}
 
-#search_clear:hover {
-	color: @text-color + 20;
-	background-color: #111 + 5;
+	&:hover {
+		color: @text-color + 20;
+		background-color: #111 + 5;
+	}
 }
 
 .hidden {
@@ -304,12 +304,15 @@ footer {
 		text-decoration: none;
 		height: 100%;
 	}
+
 	img {
 		padding: @5px;
 	}
+
 	&::-webkit-scrollbar {
 		display: none;
 	}
+
 	overflow-y: auto;
 	display: flex;
 	scrollbar-width: none;
